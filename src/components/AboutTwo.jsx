@@ -78,8 +78,8 @@ function AboutTwo() {
         </div>
 
         <div className=" flex flex-col justify-between mt-4 md:mt-[4rem] lg:flex-row items-center">
-          <div className="w-[95%]  md:w-[50%] h-[20rem] md:h-[35vh] lg:h-[50vh] ">
-            <motion.img src={Image1} alt="" className=" w-[100%]"
+          <div className="image1  md:w-[50%] h-[20rem] md:h-[35vh] lg:h-[50vh] ">
+            <motion.img src={Image1} alt="" 
             
             animate={{
               y: [0, -10, 0],
@@ -92,7 +92,7 @@ function AboutTwo() {
             
             />
           </div>
-          <div className="w-full lg:w-[45%] md:p-6">
+          <div className="w-full lg:w-[45%] md:p-6 text-center md:text-left">
             <h1 className=" w-full text-[1.7rem] uppercase font-normal">
               Welcome to the era of Decentralistion
             </h1>

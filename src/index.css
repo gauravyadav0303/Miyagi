@@ -62,6 +62,19 @@ background-color: var(--active-box);
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 440px) {
+
+  .join-button {
+    background-color:#5379FE ;
+    width: 50%;
+    margin-top: 2rem;
+    color: white !important;
+  }
+
+
+}
+
+
 #menuToggle a
 {
   text-decoration: none;
@@ -183,6 +196,7 @@ background-color: var(--active-box);
 {
   padding: 10px 0;
   font-size: 22px;
+  color: #fff;
 }
 
 /*
@@ -301,4 +315,22 @@ section .input-wrapper input {
 
 .pink{
 	background:#fff;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 765px) {
+
+  .image1{
+    width: 20rem;
+  }
+
+  #menuToggle span{
+    width: 27px;
+    height: 3px;
+  }
+  #menuToggle {
+    top: 37px;
+    right: 40px;
+  }
+
 }

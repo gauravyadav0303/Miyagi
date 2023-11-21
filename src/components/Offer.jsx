@@ -37,7 +37,7 @@ function Offer() {
 
     });
     const updateActiveBox = () => {
-      const scrollPosition = (window.scrollY + 3500);
+      const scrollPosition = (window.scrollY + 2700);
       const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
       console.log(boxIndex);
       console.log( window.scrollY)

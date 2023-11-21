@@ -9,9 +9,9 @@ function Footer() {
         <div className="text-white w-[100%] md:w-[60%] lg:w-[50%]">
           <span className="">@2023 All Rights Reserved</span>
         </div>
-        <div className="text-white w-[100%] mt-4 md:mt-[0px] md:w-[45%] lg:w-[30%] xl:w-[25%] flex flex-row justify-between">
-          <span className="">Privacy Policy</span>
-          <span className="">Terms of Service</span>
+        <div className="text-white w-[100%] mt-4 md:mt-[0px] md:w-[45%] lg:w-[30%] xl:w-[17rem] flex flex-row justify-between">
+          <a href="#" className="">Privacy Policy</a>
+          <a href="#" className="">Terms of Service</a>
         </div>
       </div>
     </section>

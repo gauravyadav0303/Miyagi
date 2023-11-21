@@ -35,7 +35,7 @@ const Header = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center shadow-sm rounded-3xl bg-white max-w-[80vw] mx-auto p-4 border-2">
+      <div className="w-full flex justify-between items-center shadow-sm rounded-3xl bg-white md:max-w-[80vw] mx-auto p-4 border-2">
         <Link
           to="/"
           className=""
@@ -44,7 +44,7 @@ const Header = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="max-w-[150px] object-contain" />
+          <img src={logo} alt="logo" className="max-w-[100px] md:max-w-[150px] object-contain" />
         </Link>
 
         <ul className="list-none hidden lg:flex flex-row gap-10">
