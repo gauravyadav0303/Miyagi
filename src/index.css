@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Exo+2:wght@100&family=Lato:wght@300&family=Nunito:wght@200;300;400;600;700&family=Playfair:ital,wght@1,300&family=Poppins:wght@100;200;300&family=Ubuntu:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root{
+  --background: "#F6F4FF";
+  --active-box: rgba(83, 121, 254, 0.1);
+}
+
+body{
+  background: var(--background);
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#root{
+  overflow: hidden;
+}
+
+.box{
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+ 
+.box{
+  width: 15rem;
+}
+}
+
+.active-box{
+background-color: var(--active-box);
+}
+
+.background{
+  background-image: url("./assets/bg.png");
+  
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  z-index: 1;
+  transform: translateY(15%);
+  /* bottom: 3rem; */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #menuToggle {
+    top: 50px;
+    right: 100px;
+    transform: translateY(-20%);
+  }
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #5379FE;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  border: 2px solid red;
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 110vh;
+  top: 10px;
+  right: -100px;
+  margin: -100px 0 0 0px;
+  padding: 50px;
+  padding-top: 125px;
+  background: rgba(83, 121, 254, 0.8); 
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+section.trigger3{
+  background-color: rgba(83, 121, 254, 0.1);
+}
+
+section .title {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+section .input-wrapper {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+section .input-wrapper .label-text {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: text;
+  transition: 200ms ease-out;
+}
+section .input-wrapper .label-text.label-text-up {
+  top: 20%;
+  font-size: 0.85rem;
+}
+section .input-wrapper input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: rgba(83, 121, 254, 0.6);
+  border-radius: 5px;
+  color: #fefefe;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 60px 0 20px;
+}
+
+
+
+.gallery {
+  display:flex;	
+  /* outline:1px solid red; */
+}
+
+.left {
+	width:50%;
+}
+
+.right {
+	max-height:120vh;
+	/* outline:1px solid purple; */
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.desktopContent {
+	margin:auto;
+	width:80%;
+}
+
+.desktopContentSection {
+	min-height:100vh;
+	/* outline:1px solid green; */
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+.desktopPhotos {
+
+	width:35vw;
+	height:70vh;
+	border-radius:20px;
+	position:relative;
+	overflow:hidden;
+}
+
+.desktopPhoto {
+	position:absolute;
+  top: 0;
+	width:100%;
+	height:100%;
+}
+
+
+
+
+.red {
+	background: #fff;
+}
+
+.green {
+	background:#fff;
+}
+
+.blue {
+	background:#fff;
+}
+
+.pink{
+	background:#fff;
+}
