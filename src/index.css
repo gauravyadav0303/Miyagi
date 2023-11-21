@@ -74,6 +74,23 @@ background-color: var(--active-box);
 
 }
 
+@media screen and (min-width: 319px) and (max-width: 374px) {
+
+  .join-button {
+    background-color:#5379FE ;
+    width: 50%;
+    margin-top: 2rem;
+    color: white !important;
+  }
+
+.verify-button {
+flex-direction: column;
+  gap: 24px  ;
+}
+.verify-button-display{
+  margin-top: 30px;
+}
+}
 
 #menuToggle a
 {
@@ -318,6 +335,24 @@ section .input-wrapper input {
 }
 
 
+
+@media screen and (min-width: 319px) and (max-width: 374px) {
+
+  .image1{
+    width: 20rem;
+  }
+
+  #menuToggle span{
+    width: 27px;
+    height: 3px;
+  }
+  #menuToggle {
+    top: 37px;
+    right: 40px;
+  }
+
+}
+
 @media screen and (min-width: 375px) and (max-width: 765px) {
 
   .image1{
@@ -331,6 +366,19 @@ section .input-wrapper input {
   #menuToggle {
     top: 37px;
     right: 40px;
+  }
+
+}
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+
+
+  #menuToggle span{
+    width: 27px;
+    height: 3px;
+  }
+  #menuToggle {
+    top: 47px;
+    right: 102px;
   }
 
 }
