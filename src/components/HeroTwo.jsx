@@ -111,9 +111,9 @@ gsap.to(".box4",{
   
      
         <div
-          className={`mt-[100px]  max-w-6xl mx-auto ${styles.paddingX} flex flex-row   items-start`}
+          className={`mt-[100px]  max-w-6xl mx-auto ${styles.paddingX} flex flex-row items-start`}
         >
-          <div className="mx-auto flex flex-row gap-10">
+          <div className="mx-auto flex flex-row gap-[1.5rem]">
           <motion.button className=" min-w-[160px] min-h-[50px] font-poppins font-medium cursor-pointer text-[16px] rounded-3xl  border-2 p-2 text-white bg-[#5379FE] "
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}

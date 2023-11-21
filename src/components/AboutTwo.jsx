@@ -56,7 +56,7 @@ function AboutTwo() {
     },[]);
 
   return (
-    <section className={`trigger1 w-full relative min-h-[100vh] mx-auto bg-[]`}>
+    <section className={`trigger1 w-full relative min-h-[80vh]  md:min-h-[100vh] mx-auto bg-[]`}>
        <motion.img className="box box5 absolute top-[3vh] left-[0px] xl:top-[10vh] xl:left-[0px] rotate-[-40.33]  hidden xl:inline-block"  
            
            src={box1} alt="box"/>
@@ -92,7 +92,7 @@ function AboutTwo() {
             
             />
           </div>
-          <div className="w-full lg:w-[45%] p-6">
+          <div className="w-full lg:w-[45%] md:p-6">
             <h1 className=" w-full text-[1.7rem] uppercase font-normal">
               Welcome to the era of Decentralistion
             </h1>

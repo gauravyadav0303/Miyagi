@@ -79,7 +79,7 @@ function OfferTwo() {
       </div>
 
       <div
-        className={`gallery mt-[50px] md:mt-[100px] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[80vw] flex flex-row justify-between`}
+        className={`gallery mt-[20px] md:mt-[100px] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[80vw] flex flex-row justify-between`}
       >
         <div className="w-full">
         <img src={Offer6} alt="" className="img1 h-full rounded-[20px]" />
