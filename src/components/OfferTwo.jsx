@@ -82,7 +82,7 @@ function OfferTwo() {
         className={`gallery mt-[20px] md:mt-[100px] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[80vw] flex flex-row justify-between`}
       >
         <div className="w-full">
-        <img src={Offer6} alt="" className="img1 h-full rounded-[20px]" />
+        <img src={Offer6} alt="" className="img1 w-full rounded-[20px]" />
           <div className="border-2 mt-4 p-4 leading-6 tracking-wide rounded-[20px]">
             
             <h1 className="text-[#5379FE] text-[22px] mb-4">Sign Documents</h1>
@@ -97,7 +97,7 @@ function OfferTwo() {
           <img
               src={Offer5}
               alt=""
-              className="img2 rounded-[20px] mt-8 md:mt-[6rem] h-full lg:mt-[3.5rem]"
+              className="img2 rounded-[20px] mt-8 md:mt-[6rem] w-full lg:mt-[3.5rem]"
             />
           <div className="border-2 mt-8 p-4 leading-6 tracking-wide rounded-[20px]">
            
@@ -111,7 +111,7 @@ function OfferTwo() {
           <img
               src={Offer4}
               alt=""
-              className="img3 last rounded-[20px] mt-8 md:mt-[6rem] md:mb-[3rem] h-full lg:mt-[3.5rem]"
+              className="img3 last rounded-[20px] mt-8 md:mt-[6rem] md:mb-[3rem] w-full lg:mt-[3.5rem]"
             />
           <div className="border-2 mt-8 p-4 leading-6 tracking-wide rounded-[20px]">
            

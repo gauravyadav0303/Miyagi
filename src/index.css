@@ -62,7 +62,7 @@ background-color: var(--active-box);
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 440px) {
+@media screen and (min-width: 375px) and (max-width: 760px) {
 
   .join-button {
     background-color:#5379FE ;
