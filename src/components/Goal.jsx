@@ -21,25 +21,27 @@ function Goal() {
           scrollTrigger:{
             trigger:".trigger3",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:-500,
           y: 200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 1
         })
         
         gsap.to(".box11",{
           scrollTrigger:{
             trigger:".trigger3",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:-800,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 1.5
         })
         
         
@@ -47,6 +49,7 @@ function Goal() {
           scrollTrigger:{
             trigger:".trigger3",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:600,
@@ -59,19 +62,20 @@ function Goal() {
           scrollTrigger:{
             trigger:".trigger3",
             start: "top top",
+           endTrigger: "bottom bottom",
             scrub:1,
           },
           x:600,
           y: 200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 2.5
         })
         
         },[]);
 
   return (
-    <section className={`trigger3 w-full relative mx-auto  `} ref={ref} >
+    <section className={`trigger3 w-full xl:min-h-[73vh] relative mx-auto  `} ref={ref} >
       <motion.img className="box box10 absolute top-[7vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"  
           
            src={box1} alt="box"/>

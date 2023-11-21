@@ -21,8 +21,6 @@ function Offer() {
 
     gsap.set(photos, { yPercent: 101 });
 
-    const allPhotos = gsap.utils.toArray(".desktopPhoto");
-
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 600px)", () => {
@@ -112,7 +110,7 @@ function Offer() {
           className={`${styles.heroHeadText}  text-white uppercase text-center`}
         >
           <span className="text-black">
-            What does have to {"<"}MIYAGI{">"} offer?
+            What does have to {"<"}<span className="text-[#5379FE]">MIYAGI</span>{">"} offer?
           </span>
         </h1>
       </div>

@@ -21,26 +21,28 @@ function Knowledge() {
           scrollTrigger:{
             trigger:".trigger4",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:-500,
           y: 200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 3
         })
         
         gsap.to(".box15",{
           scrollTrigger:{
             trigger:".trigger4",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:-800,
           y:-200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 3
         })
         
         
@@ -48,25 +50,27 @@ function Knowledge() {
           scrollTrigger:{
             trigger:".trigger4",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:600,
           y: 200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 3
         })
         gsap.to(".box17",{
           scrollTrigger:{
             trigger:".trigger4",
             start: "top top",
+            endTrigger: "bottom bottom",
             scrub:1,
           },
           x:600,
           y: 200,
           z: 200,
           ease:Power1,
-          duration: 2
+          duration: 3
         })
         
         },[]);
