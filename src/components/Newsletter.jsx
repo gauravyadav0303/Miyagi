@@ -62,7 +62,7 @@ function Newsletter() {
             </div>
         </div> */}
       </div>
-      <div className={`mt-[5rem] max-w-7xl mx-auto ${styles.paddingX} `}>
+      <div className={`mt-[5rem] xl:mt-[10rem] max-w-7xl mx-auto ${styles.paddingX} `}>
         <div className="newsletter-section ">
           <h1 className="title ">Join our Newsletter</h1>
           <div className=" md:relative lg:ml-[13rem] xl:ml-[16rem] flex flex-col  md:flex-row">

@@ -31,6 +31,7 @@ function Offer() {
         start: "top top",
         end: "bottom bottom",
         pin: ".right",
+        
       });
 
     });
@@ -118,10 +119,10 @@ function Offer() {
       <div
         className={`mt-[50px] md:mt-[100px] xl:mt-[0px] w-full mx-auto xl:pl-[10rem] xl:pr-[10rem] pb-[0rem]`}
       >
-        <div class="gallery">
-        <div class="right">
-            <div class="desktopPhotos">
-              <div class="desktopPhoto red">
+        <div className="gallery">
+        <div className="right">
+            <div className="desktopPhotos mt-[4rem] ">
+              <div className="desktopPhoto red">
                 <div className={`border-2 mt-4 p-4 leading-6 tracking-wide ${activeBox === 1 ? 'active-box' : ''} rounded-[20px]`}>
                   <h1 className="text-[#5379FE] text-[22px] mb-4">
                     Sign Documents
@@ -162,18 +163,18 @@ function Offer() {
               </div>
             </div>
           </div>
-          <div class="left">
-            <div class="desktopContent">
-              <div class="desktopContentSection">
+          <div className="left">
+            <div className="desktopContent">
+              <div className="desktopContentSection">
               
                 <img src={Offer4} alt="" className="img1 rounded-[20px]" />
               </div>
 
-              <div class="desktopContentSection">
+              <div className="desktopContentSection">
              
                 <img src={Offer5} alt="" className="img2 rounded-[20px]" />
               </div>
-              <div class="desktopContentSection">
+              <div className="desktopContentSection">
              
                 <img
                   src={Offer6}

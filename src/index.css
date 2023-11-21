@@ -175,18 +175,11 @@ flex-direction: column;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: absolute;
@@ -207,7 +200,6 @@ flex-direction: column;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-
 #menu li
 {
   padding: 10px 0;
@@ -215,16 +207,9 @@ flex-direction: column;
   color: #fff;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul
 {
   transform: none;
-}
-
-section.trigger3{
-  background-color: rgba(83, 121, 254, 0.1);
 }
 
 section .title {
