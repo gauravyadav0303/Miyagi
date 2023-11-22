@@ -5,8 +5,12 @@ import Believe from "../components/Believe";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 import Power from "../components/Power";
+import { useEffect } from "react";
 
 function Philosophy() {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[]);
     return ( <>
     <Header/>
     <Hero/>
