@@ -15,6 +15,10 @@ import box13 from "./box13.png"
 import facebook from "./facebook.png"
 import twitter from "./twitter.png"
 import linkedIn from "./linkedIn.png"
+import hand1 from "./hand1.png"
+import hand2 from "./hand2.png"
+import hand3 from "./hand3.png"
+import hand from "./hand.gif"
 
 
 export{
@@ -27,4 +31,6 @@ export{
   Image1,
   box1,box2,box3,box4,box8,box9,box13,
   facebook,twitter,linkedIn,
+  hand1,hand2,hand3,
+  hand
 };

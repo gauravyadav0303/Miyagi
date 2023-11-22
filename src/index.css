@@ -22,13 +22,18 @@ body{
   overflow: hidden;
 }
 
-.box{
+.box,
+.box20{
   z-index: -1;
 }
 @media only screen and (max-width: 600px) {
  
 .box{
   width: 15rem;
+}
+
+.box20{
+  width: 10rem;
 }
 }
 
@@ -39,6 +44,9 @@ background-color: var(--active-box);
 .background{
   background-image: url("./assets/bg.png");
   
+}
+.active{
+  color: #5379FE;
 }
 
 #menuToggle
@@ -211,6 +219,11 @@ flex-direction: column;
 {
   transform: none;
 }
+
+section.about{
+  background: rgba(83, 121, 254, 0.1);
+}
+
 
 section .title {
   text-align: center;
