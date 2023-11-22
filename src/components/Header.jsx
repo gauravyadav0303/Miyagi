@@ -78,18 +78,13 @@ const Header = () => {
               <span></span>
 
               <ul id="menu">
-                <a href="#">
-                  <li>Home</li>
-                </a>
-                <a href="#">
-                  <li>Service</li>
-                </a>
-                <a href="#">
-                  <li>Philosphy</li>
-                </a>
-                <a href="#">
-                  <li>Subscription</li>
-                </a>
+                <NavLink to="/" exact activeClassName="active"><li>Home</li></NavLink>
+                
+                <NavLink to="/service"><li>Service</li></NavLink>
+                
+                <NavLink to="/philosophy"><li>Philosphy</li></NavLink>
+               
+                <NavLink to="/subscription"><li>Subscription</li></NavLink>
               </ul>
             </div>
           </nav>
