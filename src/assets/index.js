@@ -12,7 +12,9 @@ import box4 from "./box4.png"
 import box8 from "./box8.png"
 import box9 from "./box9.png"
 import box13 from "./box13.png"
-
+import facebook from "./facebook.png"
+import twitter from "./twitter.png"
+import linkedIn from "./linkedIn.png"
 
 
 export{
@@ -24,4 +26,5 @@ export{
   Offer6,
   Image1,
   box1,box2,box3,box4,box8,box9,box13,
+  facebook,twitter,linkedIn,
 };
