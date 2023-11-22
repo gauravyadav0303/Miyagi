@@ -98,7 +98,7 @@ function Believe() {
         alt="box"
       />
       {inView && (
-        <div
+        <motion.div
           className={` w-7xl mx-auto ${styles.paddingX} flex flex-col gap-10 lg:w-[80vw]`}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -139,7 +139,7 @@ function Believe() {
              <span className="text-[#5379FE]">Together</span> , we shall make a <span className="text-[#5379FE]">difference</span>. 
             </span>
           </h2>
-        </div>
+        </motion.div>
       )}
     </section>
   );

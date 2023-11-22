@@ -23,7 +23,7 @@ function About() {
       ref={ref}
     >
       {inView && (
-        <motion.div
+        <div
           className={` w-7xl mx-auto ${styles.paddingX} items-start lg:w-[80vw]`}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -50,7 +50,7 @@ function About() {
               </span>
             </span>
           </h2>
-        </motion.div>
+        </div>
       )}
 
       <div
