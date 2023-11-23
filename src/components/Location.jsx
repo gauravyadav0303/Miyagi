@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 function Location() {
   return (
-    <section className="{`w-full relative pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh] lg:pt-[30vh] lg:pb-[30vh] min-h-[40vh] lg:min-h-[60vh] mx-auto`}  overflow-hidden ">
+    <section className="location w-full relative pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh] lg:pt-[30vh] lg:pb-[30vh] min-h-[40vh] lg:min-h-[60vh] mx-auto overflow-hidden ">
       <motion.img
         className="box20 absolute top-[-5vh] left-[0px] xl:top-[0vh] xl:left-[0px] rotate-[-40.33] "
         animate={{

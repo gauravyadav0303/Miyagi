@@ -6,10 +6,15 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Offer() {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
   const [activeBox, setActiveBox] = useState(1);
 
@@ -26,29 +31,30 @@ function Offer() {
     mm.add("(min-width: 600px)", () => {
       console.log("desktop");
 
-      ScrollTrigger.create({
-        trigger: ".gallery",
-        start: "top top",
-        end: "bottom bottom",
-        pin: ".right",
-        
+      gsap.to(".desktopContentSection", {
+        scrollTrigger: {
+          trigger: ".gallery",
+          pin: true,
+          start: "top top",
+          end: "bottom bottom",
+          endTrigger: ".last",
+          scrub: 1,
+        },
+        y: "-350%",
+        ease: Power1,
       });
-
     });
     const updateActiveBox = () => {
-      const scrollPosition = (window.scrollY + 2700);
+      const scrollPosition = window.scrollY + window.innerHeight*3.4;
       const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
       console.log(boxIndex);
-      console.log( window.scrollY)
+      console.log(window.scrollY);
 
-     
       setActiveBox(boxIndex);
     };
 
-    
     window.addEventListener("scroll", updateActiveBox);
 
-   
     gsap.to(".box8", {
       scrollTrigger: {
         trigger: ".trigger2",
@@ -85,8 +91,6 @@ function Offer() {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", updateActiveBox);
     };
-     
-
   }, []);
 
   if (!isLargeScreen) {
@@ -111,19 +115,25 @@ function Offer() {
           className={`${styles.heroHeadText}  text-white uppercase text-center`}
         >
           <span className="text-black">
-            What does have to {"<"}<span className="text-[#5379FE]">MIYAGI</span>{">"} offer?
+            What does have to {"<"}
+            <span className="text-[#5379FE]">MIYAGI</span>
+            {">"} offer?
           </span>
         </h1>
       </div>
 
       <div
-        className={`mt-[50px] md:mt-[100px] xl:mt-[0px] w-full mx-auto xl:pl-[10rem] xl:pr-[10rem] pb-[0rem]`}
+        className={`mt-[50px] md:mt-[100px] xl:mt-[100px] w-full mx-auto xl:pl-[10rem] xl:pr-[10rem] pb-[0rem]`}
       >
         <div className="gallery">
-        <div className="right">
-            <div className="desktopPhotos mt-[4rem] ">
+          <div className="right">
+            <div className="desktopPhotos  ">
               <div className="desktopPhoto red">
-                <div className={`border-2 mt-4 p-4 leading-6 tracking-wide ${activeBox === 1 ? 'active-box' : ''} rounded-[20px]`}>
+                <div
+                  className={`border-2 mt-4 p-4 leading-6 tracking-wide ${
+                    activeBox === 1 ? "active-box" : ""
+                  } rounded-[20px]`}
+                >
                   <h1 className="text-[#5379FE] text-[22px] mb-4">
                     Sign Documents
                   </h1>
@@ -136,7 +146,11 @@ function Offer() {
                   </p>
                 </div>
 
-                <div className={`border-2 mt-8 p-4 leading-6 tracking-wide ${activeBox === 2 ? 'active-box' : ''} rounded-[20px]`}>
+                <div
+                  className={`border-2 mt-8 p-4 leading-6 tracking-wide ${
+                    activeBox === 2 ? "active-box" : ""
+                  } rounded-[20px]`}
+                >
                   <h1 className="text-[#5379FE] text-[22px] mb-4">
                     Store Data
                   </h1>
@@ -148,7 +162,11 @@ function Offer() {
                   </p>
                 </div>
 
-                <div className={`border-2 mt-8 p-4 leading-6 tracking-wide ${activeBox === 3 ? 'active-box' : ''} rounded-[20px]`}>
+                <div
+                  className={`border-2 mt-8 p-4 leading-6 tracking-wide ${
+                    activeBox === 3 ? "active-box" : ""
+                  } rounded-[20px]`}
+                >
                   <h1 className="text-[#5379FE] text-[22px] mb-4">
                     Verify Documents
                   </h1>
@@ -164,28 +182,57 @@ function Offer() {
             </div>
           </div>
           <div className="left">
-            <div className="desktopContent">
-              <div className="desktopContentSection">
-              
-                <img src={Offer4} alt="" className="img1 rounded-[20px]" />
-              </div>
-
-              <div className="desktopContentSection">
-             
-                <img src={Offer5} alt="" className="img2 rounded-[20px]" />
-              </div>
-              <div className="desktopContentSection">
-             
-                <img
-                  src={Offer6}
-                  alt=""
-                  className="img3 last rounded-[20px] "
-                />
-              </div>
-            </div>
+            <motion.div className="desktopContent" ref={ref}>
+              {inView && (
+                <motion.div className="desktopContentSection">
+                  {activeBox === 1 && (
+                    <motion.img
+                      src={Offer4}
+                      alt=""
+                      className="img img1 rounded-[20px]"
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{ opacity: inView ? 1 : 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
+                    />
+                  )}
+                </motion.div>
+              )}
+              {inView && (
+                <motion.div className="desktopContentSection">
+                  {activeBox === 2 && (
+                    <motion.img
+                      src={Offer5}
+                      alt=""
+                      className="img img2 rounded-[20px]"
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{ opacity: inView ? 1 : 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
+                    />
+                  )}
+                </motion.div>
+              )}
+              {inView && (
+                <motion.div className="desktopContentSection last">
+                  {activeBox === 3 && (
+                    <motion.img
+                      src={Offer6}
+                      alt=""
+                      className="img img3 last rounded-[20px] "
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{ opacity: inView ? 1 : 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
+                    />
+                  )}
+                </motion.div>
+              )}
+            </motion.div>
           </div>
-
-   
         </div>
 
         {/* <div className="right w-full mt-[4rem] h-[65vh] overflow-auto ">

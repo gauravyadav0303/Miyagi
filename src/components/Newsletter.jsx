@@ -2,8 +2,14 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { box1, box2 } from "../assets";
 import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Newsletter() {
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
  
   return (
     <section className="{`w-full relative min-h-[60vh] md:min-h-[60vh] mx-auto`} mb-[4rem] md:mb-[10rem] overflow-hidden ">
@@ -34,9 +40,19 @@ function Newsletter() {
         alt="box"
       />
       <div
-        className={`md:mt-[200px] max-w-3xl xl:max-w-4xl mx-auto ${styles.paddingX}`}
+        className={`md:mt-[200px] max-w-3xl xl:max-w-4xl mx-auto ${styles.paddingX}`} ref={ref}
       >
-        <div className="p-2  text-center flex flex-col justify-center">
+        {inView && (
+        <motion.div className="p-2  text-center flex flex-col justify-center"
+        initial={{
+          opacity: 0,
+         
+        }}
+        animate={{
+          opacity: 1,
+        
+        }}
+        transition={{ duration: 1, delay:0.5 }}>
           <h1 className="text-slate-950 text-[1.5rem] xl:text-[2.3rem] font-normal leading-[34px] uppercase mb-8">
             Decentralise. Simplify. Digitilise.
           </h1>
@@ -45,7 +61,8 @@ function Newsletter() {
             problems and empowers you to execute your plans. We stay light on
             our feet and truly enjoy delivering great work.
           </p>
-        </div>
+        </motion.div>
+        )}
         {/* 
         <div className=" md:w-full lg:w-[90%] xl:w-[90%] h-[61.1px] bg-gray-200 lg:ml-[3rem] mt-[5rem] flex flex-col justify-between md:flex-row rounded-xl pr-2">
           <div className="text-slate-900 md:w-[30%] text-[1.2rem] font-semibold leading-loose tracking-wide text-center pt-[13px]">

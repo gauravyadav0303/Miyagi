@@ -92,19 +92,15 @@ function Goal() {
            {inView && (
       <motion.div
         className={`pt-[30vh] pb-[30vh] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[80vw]`}
-        initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.3,
-        delay:0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-        scale: {
-          type: "spring",
-          damping: 5,
-          stiffness: 100,
-          restDelta: 0.001
-        }
-      }}
+        initial={{
+          opacity: 0,
+         
+        }}
+        animate={{
+          opacity: 1,
+        
+        }}
+        transition={{ duration: 1, delay:0.5 }}
       >
         <h2
           className={`${styles.heroHead1Text}  text-white uppercase text-center`}
