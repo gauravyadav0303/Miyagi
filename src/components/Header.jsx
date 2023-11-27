@@ -54,7 +54,7 @@ const Header = () => {
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
           >
-            <NavLink to="/service">Service</NavLink>
+            <NavLink to="/storage">Storage</NavLink>
           </li>
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
@@ -80,7 +80,7 @@ const Header = () => {
               <ul id="menu">
                 <NavLink to="/" exact activeClassName="active"><li>Home</li></NavLink>
                 
-                <NavLink to="/service"><li>Service</li></NavLink>
+                <NavLink to="/storage"><li>Storage</li></NavLink>
                 
                 <NavLink to="/philosophy"><li>Philosphy</li></NavLink>
                

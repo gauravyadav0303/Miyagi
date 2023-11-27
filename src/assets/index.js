@@ -19,7 +19,7 @@ import hand1 from "./hand1.png"
 import hand2 from "./hand2.png"
 import hand3 from "./hand3.png"
 import hand from "./hand.gif"
-
+import feature1 from "./feature1.png"
 
 export{
     logo,
@@ -32,5 +32,5 @@ export{
   box1,box2,box3,box4,box8,box9,box13,
   facebook,twitter,linkedIn,
   hand1,hand2,hand3,
-  hand
+  hand,feature1,
 };
