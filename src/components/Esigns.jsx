@@ -32,7 +32,7 @@ function Esign() {
 
   return (
     <section
-      className={`trigger3 w-full min-h-[100vh] md:pt-[10vh] pb-[10vh] relative mx-auto `}
+      className={`trigger3 w-full h-full md:pt-[10vh] pb-[10vh] relative mx-auto `}
       ref={ref}
     >
        <motion.img className="box box8 absolute top-[5vh] left-[0px] xl:top-[10vh] hidden md:inline-block xl:left-[0px] rotate-[-40.33]"  
@@ -60,107 +60,6 @@ function Esign() {
           <div className="text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize">
             E-signs at <span className="text-[#5379FE]">Miyagi</span> at priced
             @Rs5
-          </div>
-        </div>
-      </div>
-
-      <div
-        className={`${styles.paddingX} mt-[5rem] flex flex-wrap justify-center gap-6`}
-      >
-        <div className="w-[310px] h-[220px] md:h-[270px] bg-blue-500 rounded-3xl p-6 flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-              $7.81
-              <span className="text-white text-2xl lowercase leading-[25px] md:leading-[34px]">
-                /MO
-              </span>
-            </h1>
-
-            <p className=" text-white text-[16px] md:text-[21px] capitalize leading-[25px] md:leading-[34px]">
-              Individual Golf professional ({"<"}500 Clients)
-            </p>
-          </div>
-          <div>
-            <motion.button
-              className=" min-w-[160px] min-h-[50px] font-poppins cursor-pointer text-[16px] rounded-xl  border-2 p-2 text-black bg-white "
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              Choose Base
-            </motion.button>
-          </div>
-        </div>
-        <div className="w-[310px] h-[220px] md:h-[270px] bg-blue-500 rounded-3xl p-6 flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-              $7.81
-              <span className="text-white text-2xl lowercase leading-[25px] md:leading-[34px]">
-                /MO
-              </span>
-            </h1>
-
-            <p className=" text-white text-[16px] md:text-[21px] capitalize leading-[25px] md:leading-[34px]">
-              Individual Golf professional ({"<"}500 Clients)
-            </p>
-          </div>
-          <div>
-            <motion.button
-              className=" min-w-[160px] min-h-[50px] font-poppins cursor-pointer text-[16px] rounded-xl  border-2 p-2 text-black bg-white "
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              Choose Base
-            </motion.button>
-          </div>
-        </div>
-        <div className="w-[310px] h-[220px] md:h-[270px] bg-blue-500 rounded-3xl p-6 flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-              $14.71
-              <span className="text-white text-2xl lowercase leading-[25px] md:leading-[34px]">
-                /MO
-              </span>
-            </h1>
-
-            <p className=" text-white text-[16px] md:text-[21px] capitalize leading-[25px] md:leading-[34px]">
-              Individual Golf professional ({">"}500 Clients)
-            </p>
-          </div>
-          <div>
-            <motion.button
-              className=" min-w-[160px] min-h-[50px] font-poppins cursor-pointer text-[16px] rounded-xl  border-2 p-2 text-black bg-white "
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              Choose Base
-            </motion.button>
-          </div>
-        </div>
-        <div className="w-[310px] h-[220px] md:h-[270px] bg-blue-500 rounded-3xl p-6 flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-              $22.52
-              <span className="text-white text-2xl lowercase leading-[25px] md:leading-[34px]">
-                /MO
-              </span>
-            </h1>
-
-            <p className=" text-white text-[16px] md:text-[21px] capitalize leading-[25px] md:leading-[34px]">
-            Larger Academies (More Than 3 Professionals)
-            </p>
-          </div>
-          <div>
-            <motion.button
-              className=" min-w-[160px] min-h-[50px] font-poppins cursor-pointer text-[16px] rounded-xl  border-2 p-2 text-black bg-white "
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              Choose Base
-            </motion.button>
           </div>
         </div>
       </div>

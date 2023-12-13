@@ -47,7 +47,7 @@ function Contact() {
       >
         <div className={`w-full lg:w-[50%] text-center lg:text-left`}>
           <span className={`${styles.heroHeadText}  text-black uppercase`}>
-            COMING SOON, IN BETA TESTING REACH OUT FOR access
+          Coming Soon, currently in the Beta-Testing phases, Reach out for Early-Access
           </span>
     
           <div className="mt-6">

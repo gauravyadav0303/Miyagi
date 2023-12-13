@@ -6,6 +6,7 @@ import StorageBanner from "../components/StorageBanner";
 import Feature from "../components/Feature";
 import StorageSubscription from "../components/StorageSubscription";
 import EsignTwo from "../components/EsignsTwo";
+import FeatureTwo from "../components/FeatureTwo";
 
 
 function Storage() {
@@ -15,9 +16,8 @@ function Storage() {
     return ( <>
     <Header/>
     <StorageBanner/>
-    <Feature/>
+    <FeatureTwo/>
     <StorageSubscription/>
-    <EsignTwo/>
     <Contact/>
     <Footer/>
     </> );

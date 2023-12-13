@@ -23,7 +23,7 @@ function Subscription() {
     <Esign/>
     <AboutThree/>
     <EsignSubscription/>
-    <Contact/>
+    {/* <Contact/> */}
     <Footer/>
     </> );
 }

@@ -47,24 +47,28 @@ const Header = () => {
 
         <ul className="list-none hidden lg:flex flex-row gap-10">
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
+            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/" exact activeClassName="active">Home</NavLink>
+            {window.location.pathname === '/' && <span className="dot absolute bottom-[-10px]"></span>}
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
+            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
-            <NavLink to="/storage">Storage</NavLink>
+            <NavLink to="/storage">Product</NavLink>
+            {window.location.pathname === '/storage' && <span className="dot absolute bottom-[-10px]"></span>}
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
+            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/philosophy">Philosophy</NavLink>
+            {window.location.pathname === '/philosophy' && <span className="dot absolute bottom-[-10px]"></span>}
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer`}
+            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/subscription">Subscription</NavLink>
+            {window.location.pathname === '/subscription' && <span className="dot absolute bottom-[-10px]"></span>}
           </li>
         </ul>
 

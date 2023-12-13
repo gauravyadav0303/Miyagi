@@ -80,7 +80,8 @@ function Upload() {
        
       </div>
 
-      <div className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-6`}>
+      <div className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-5`}>
+      <div className="border-2 p-[0.1rem] rounded-3xl shadow-2xl">
           <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
@@ -117,6 +118,7 @@ function Upload() {
                 Additional Agenda {"<"}11 Month
               </h3>
             </div>
+          </div>
           </div>
           <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">

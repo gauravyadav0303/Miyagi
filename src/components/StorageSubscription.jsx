@@ -73,7 +73,7 @@ function StorageSubscription() {
             className={`${styles.heroHeadText}  text-white uppercase text-center`}
           >
             <span className="text-black">
-              BLOCKCHAIN-BASED ESIGN <br /> SUBSCRIPTION
+            We at <span className="text-[#5379FE]">miyagi</span> offer 4 plans <br/> of varying storages
             </span>
           </h2>
         </div>

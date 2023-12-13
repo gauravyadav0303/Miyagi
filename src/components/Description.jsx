@@ -58,7 +58,7 @@ function Description() {
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
             <span className="text-black">
-              BLOCKCHAIN-BACKED UPLOAD <br /> SUBSCRIPTION
+              BLOCKCHAIN-BACKED UPLOAD
             </span>
           </h1>
         </div>
@@ -67,8 +67,8 @@ function Description() {
       <div
         className={`mt-[40px] w-full md:max-w-[44rem]  lg:max-w-6xl mx-auto ${styles.paddingX} flex flex-row items-start`}
       >
-        <div className=" mx-auto flex flex-col gap-[0.5rem]">
-          <div className={`text-center ${styles.heroSubText} font-semibold`}>
+        <div className=" mx-auto flex flex-col gap-[2.5rem]">
+          <div className={`text-center ${styles.heroSubText}`}>
             Why should you upload to the chain?
           </div>
           <div className="flex flex-col gap-6 justify-center text-center">

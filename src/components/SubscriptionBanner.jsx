@@ -59,7 +59,7 @@ function SubscriptionBanner() {
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
             <span className="text-black">
-            BLOCKCHAIN-BACKED UPLOAD <br/> SUBSCRIPTION
+            Documents uploaded on the <br/> chain are stored in a <br/> decentralized manner on <br/> Miyagi
             </span>
           </h1>
         </div>
@@ -73,7 +73,7 @@ function SubscriptionBanner() {
           Why should you upload to the chain?
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">
-          Uploading to the chain upgrades your assets in a <span className="text-[#5379FE]">facade</span> of ways,<br/> the most important being.
+          Uploading your data on the chain opens up avenues for your data <br/> to become : (followed by the 4 prompts)
           </div>
         </div>
       </div>
