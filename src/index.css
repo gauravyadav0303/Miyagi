@@ -554,3 +554,47 @@ label {
   margin-top: 3px; /* adjust the margin based on your design */
   margin-left: 2px; /* adjust the margin based on your design */
 }
+
+.activeBox{
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.1rem;
+  border-radius: 1.5rem;
+  --shadow-color: hsl(0deg 0% 0% / 0.25);
+  filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
+}
+
+
+.activeBox>.inneractiveBox>.featured-image{
+  background-color: #fff;
+}
+
+.activeBox>.inneractiveBox{
+  background-color: #5379FE;
+  color: #fff;
+}
+
+
+.dropdown-content {
+  display: none;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.products-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mobile-dropdown-content{
+  display: none;
+}
+
+.mobile-dropdown:hover .mobile-dropdown-content{
+  display: block;
+}
+

@@ -5,11 +5,72 @@ import { box1, box8, box13 } from "../assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { uploadcard } from "..";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+function UploadCard({ subscriptiontype, detail, content, amount, time, index, activeBox, handleBoxClick }) {
+  return (
+    <div
+      key={index}
+      onClick={() => handleBoxClick(index)}
+      className={`${
+        activeBox === index ? "activeBox" : ""
+      }`}
+    >
+    <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="flex flex-col gap-4 md:gap-6">
+            <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
+              {subscriptiontype}
+            </h1>
+            <div className="flex flex-col gap-5">
+              <p className=" text-white text-[18px] md:text-[21px] capitalize leading-[25px] md:leading-[30px]">
+               {detail}
+              </p>
+              <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
+                {content}
+              </p>
+            </div>
+          </div>
+          <div>
+            <h1 className="text-white text-[25px] md:text-[40px] lowercase">
+              {amount}
+              <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
+                /MO
+              </span>
+            </h1>
+            <div className="w-full text-center my-2">
+              <motion.button
+                className="min-w-[140px] md:min-w-[160px] min-h-[40px] md:min-h-[50px] font-poppins cursor-pointer text-[15px] md:text-[16px] rounded-3xl  border-2 p-2 text-black bg-white "
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                Choose Base
+              </motion.button>
+            </div>
+            <h3 className="text-center text-white text-[0.9rem] md:text-base font-normal leading-normal">
+              {time}
+            </h3>
+          </div>
+        </div>
+    </div>
+  );
+}
+
+
 function Upload() {
+
+  const [activeBox, setActiveBox] = useState(0);
+
+
+  const handleBoxClick = (index) => {
+    setActiveBox(index);
+  };
+
   useEffect(() => {
     gsap.to(".box5", {
       scrollTrigger: {
@@ -46,7 +107,10 @@ function Upload() {
       ease: Power1,
       duration: 2,
     });
-  }, []);
+
+  }, [activeBox]);
+
+ 
 
   return (
     <section
@@ -77,159 +141,21 @@ function Upload() {
             </span>
           </h2>
         </div>
-       
       </div>
 
-      <div className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-5`}>
-      <div className="border-2 p-[0.1rem] rounded-3xl shadow-2xl">
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
-            <div className="flex flex-col gap-4 md:gap-6">
-              <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
-                base
-              </h1>
-              <div className="flex flex-col gap-5">
-                <p className=" text-white text-[18px] md:text-[21px] capitalize leading-[25px] md:leading-[30px]">
-                  Individual Golf professional ({"<"}500 Clients)
-                </p>
-                <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
-                  He Perfect Match For Starting Golf Professionals And Golf
-                  Professionals With a Smaller Clientele.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-                $7.81
-                <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
-                  /MO
-                </span>
-              </h1>
-              <div className="w-full text-center my-2">
-                <motion.button
-                  className="min-w-[140px] md:min-w-[160px] min-h-[40px] md:min-h-[50px] font-poppins cursor-pointer text-[15px] md:text-[16px] rounded-3xl  border-2 p-2 text-black bg-white "
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  Choose Base
-                </motion.button>
-              </div>
-              <h3 className="text-center text-white text-[0.9rem] md:text-base font-normal leading-normal">
-                Additional Agenda {"<"}11 Month
-              </h3>
-            </div>
-          </div>
-          </div>
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
-            <div className="flex flex-col gap-4 md:gap-6">
-              <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
-                base
-              </h1>
-              <div className="flex flex-col gap-5">
-                <p className=" text-white text-[18px] md:text-[21px] capitalize leading-[25px] md:leading-[30px]">
-                  Individual Golf professional ({"<"}500 Clients)
-                </p>
-                <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
-                  He Perfect Match For Starting Golf Professionals And Golf
-                  Professionals With a Smaller Clientele.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-                $7.81
-                <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
-                  /MO
-                </span>
-              </h1>
-              <div className="w-full text-center my-2">
-                <motion.button
-                  className="min-w-[140px] md:min-w-[160px] min-h-[40px] md:min-h-[50px] font-poppins cursor-pointer text-[15px] md:text-[16px] rounded-3xl  border-2 p-2 text-black bg-white "
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  Choose Base
-                </motion.button>
-              </div>
-              <h3 className="text-center text-white text-[0.9rem] md:text-base font-normal leading-normal">
-                Additional Agenda {"<"}11 Month
-              </h3>
-            </div>
-          </div>
-          <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
-            <div className="flex flex-col gap-4 md:gap-6">
-              <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
-                plus
-              </h1>
-              <div className="flex flex-col gap-5">
-                <p className=" text-white text-[18px] md:text-[21px] capitalize leading-[25px] md:leading-[30px]">
-                Individual Golf Professional ({">"}500 Clients) & Smaller Academies ({"<"} Less Than 3 Professionals
-                </p>
-                <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
-                For The Golf Professionals Who Already Have Many Teaching Hours and Who Have a Large Customer Database and For The Small Golf Academies.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-                $14.71
-                <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
-                  /MO
-                </span>
-              </h1>
-              <div className="w-full text-center my-2">
-                <motion.button
-                  className="min-w-[140px] md:min-w-[160px] min-h-[40px] md:min-h-[50px] font-poppins cursor-pointer text-[15px] md:text-[16px] rounded-3xl  border-2 p-2 text-black bg-white "
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  Choose Base
-                </motion.button>
-              </div>
-              <h3 className="text-center text-white text-[0.9rem] md:text-base font-normal leading-normal">
-                Additional Agenda {"<"}18 Month
-              </h3>
-            </div>
-          </div>
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
-            <div className="flex flex-col gap-4 md:gap-6">
-              <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
-                premium
-              </h1>
-              <div className="flex flex-col gap-5">
-                <p className=" text-white text-[18px] md:text-[21px] capitalize leading-[25px] md:leading-[30px]">
-                Larger Academies (More Than 3 Professionals)
-                </p>
-                <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
-                The Ultimate Solution For The Bigger Academies With a Larger Clientele.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-                $22.52
-                <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
-                  /MO
-                </span>
-              </h1>
-              <div className="w-full text-center my-2">
-                <motion.button
-                  className="min-w-[140px] md:min-w-[160px] min-h-[40px] md:min-h-[50px] font-poppins cursor-pointer text-[15px] md:text-[16px] rounded-3xl  border-2 p-2 text-black bg-white "
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  Choose Base
-                </motion.button>
-              </div>
-              <h3 className="text-center text-white text-[0.9rem] md:text-basee font-normal leading-normal">
-                Additional Agenda {"<"}25 Month
-              </h3>
-            </div>
-          </div>
-        </div>
+      <div
+        className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-5`}
+      >
+       {uploadcard.map((subscriptiontype, index) => (
+              <UploadCard
+                key={index}
+                index={index}
+                activeBox={activeBox}
+                handleBoxClick={handleBoxClick}
+                {...subscriptiontype}
+              />
+            ))}
+      </div>
     </section>
   );
 }

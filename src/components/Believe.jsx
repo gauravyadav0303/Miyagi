@@ -6,7 +6,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect } from "react";
-import { fadeIn, textVariant } from "../utils/motion.js";
 
 gsap.registerPlugin(ScrollTrigger);
 

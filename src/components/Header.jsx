@@ -3,9 +3,11 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { logo } from "../assets";
+import { Icon } from "@iconify/react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+
   const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
@@ -49,26 +51,79 @@ const Header = () => {
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
-            <NavLink to="/" exact activeClassName="active">Home</NavLink>
-            {window.location.pathname === '/' && <span className="dot absolute bottom-[-10px]"></span>}
+            <NavLink to="/" exact activeClassName="active">
+              Home
+            </NavLink>
+            {window.location.pathname === "/" && (
+              <span className="dot absolute bottom-[-10px]"></span>
+            )}
           </li>
-          <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
-          >
-            <NavLink to="/storage">Product</NavLink>
-            {window.location.pathname === '/storage' && <span className="dot absolute bottom-[-10px]"></span>}
+          <li className="hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative products-dropdown">
+            <NavLink to="/storage" className="flex flex-row justify-between">
+              Products{" "}
+              <span className="mx-auto">
+                <Icon
+                  icon="iconamoon:arrow-down-2-thin"
+                  width="26"
+                  className="flex"
+                />
+              </span>
+            </NavLink>
+            {window.location.pathname === "/storage" && (
+              <span className="dot absolute bottom-[-10px]"></span>
+            )}
+
+            <ul className="dropdown-content absolute border-2 p-4 rounded-lg top-[4rem] left-0 flex flex-col gap-4">
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Storage</a>
+              </li>
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Verification</a>
+              </li>
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Esign</a>
+              </li>
+            </ul>
           </li>
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/philosophy">Philosophy</NavLink>
-            {window.location.pathname === '/philosophy' && <span className="dot absolute bottom-[-10px]"></span>}
+            {window.location.pathname === "/philosophy" && (
+              <span className="dot absolute bottom-[-10px]"></span>
+            )}
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
+            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative products-dropdown`}
           >
-            <NavLink to="/subscription">Subscription</NavLink>
-            {window.location.pathname === '/subscription' && <span className="dot absolute bottom-[-10px]"></span>}
+            <NavLink
+              to="/subscription"
+              className="flex flex-row justify-between"
+            >
+              Subscription{" "}
+              <span className="mx-auto">
+                <Icon
+                  icon="iconamoon:arrow-down-2-thin"
+                  width="26"
+                  className="flex"
+                />
+              </span>
+            </NavLink>
+            {window.location.pathname === "/subscription" && (
+              <span className="dot absolute bottom-[-10px]"></span>
+            )}
+
+            <ul className="dropdown-content absolute border-2 p-4 rounded-lg top-[4rem] left-0 flex flex-col gap-4">
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Storage</a>
+              </li>
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Pricing</a>
+              </li>
+              <li className="border-b-2 p-2 text-black">
+                <a href="#">Esign</a>
+              </li>
+            </ul>
           </li>
         </ul>
 
@@ -82,13 +137,57 @@ const Header = () => {
               <span></span>
 
               <ul id="menu">
-                <NavLink to="/" exact activeClassName="active"><li>Home</li></NavLink>
-                
-                <NavLink to="/storage"><li>Storage</li></NavLink>
-                
-                <NavLink to="/philosophy"><li>Philosphy</li></NavLink>
-               
-                <NavLink to="/subscription"><li>Subscription</li></NavLink>
+                <NavLink to="/" exact activeClassName="active">
+                  <li>Home</li>
+                </NavLink>
+
+                <NavLink to="/storage">
+                  <li className="mobile-dropdown">
+                    Storage
+                    <Icon
+                      icon="iconamoon:arrow-down-2-thin"
+                      width="26"
+                      className="inline-block"
+                    />
+                    <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
+                      <li className="p-2 text-white">
+                        <a href="#">Storage</a>
+                      </li>
+                      <li className="p-2 text-white">
+                        <a href="#">Verification</a>
+                      </li>
+                      <li className="p-2 text-white">
+                        <a href="#">Esign</a>
+                      </li>
+                    </ul>
+                  </li>
+                </NavLink>
+
+                <NavLink to="/philosophy">
+                  <li>Philosphy</li>
+                </NavLink>
+
+                <NavLink to="/subscription">
+                  <li className="mobile-dropdown">
+                    Subscription
+                    <Icon
+                      icon="iconamoon:arrow-down-2-thin"
+                      width="26"
+                      className="inline-block"
+                    />
+                    <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
+                      <li className="p-2 text-white">
+                        <a href="#">Storage</a>
+                      </li>
+                      <li className="p-2 text-white">
+                        <a href="#">Pricing</a>
+                      </li>
+                      <li className="p-2 text-white">
+                        <a href="#">Esign</a>
+                      </li>
+                    </ul>
+                  </li>
+                </NavLink>
               </ul>
             </div>
           </nav>

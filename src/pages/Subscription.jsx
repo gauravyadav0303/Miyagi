@@ -7,7 +7,6 @@ import Upload from "../components/Upload";
 import Esign from "../components/Esigns";
 import AboutThree from "../components/AboutThree";
 import EsignSubscription from "../components/EsignSubscription";
-import Contact from "../components/Contact";
 import Description from "../components/Description";
 
 function Subscription() {
@@ -23,7 +22,6 @@ function Subscription() {
     <Esign/>
     <AboutThree/>
     <EsignSubscription/>
-    {/* <Contact/> */}
     <Footer/>
     </> );
 }
