@@ -96,7 +96,7 @@ const Header = () => {
                       scale: 1,
                     }}
                     transition={{ duration: 0.2, delay: 0 }}
-                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
+                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
                   >
                     <a href="#">Storage</a>
                   </motion.div>

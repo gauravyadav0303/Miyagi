@@ -16,7 +16,9 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
   };
 
   return (
-    <motion.div key={index} className="activeBox" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div key={index} className="activeBox"
+     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+     >
       <div className="inneractiveBox flex flex-col w-[310px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
         <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
           <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
@@ -33,7 +35,7 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -51,7 +53,7 @@ function Feature() {
       ref={ref}
     >
       {inView && (
-        <motion.div
+        <div
           className={`pb-[10vh] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[100vw]`}
         >
           <div className="w-full flex flex-wrap justify-center gap-6">
@@ -59,7 +61,7 @@ function Feature() {
               <FeatureCard key={index} index={index} {...feature} />
             ))}
           </div>
-        </motion.div>
+        </div>
       )}
     </section>
   );

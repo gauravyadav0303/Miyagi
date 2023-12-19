@@ -68,7 +68,7 @@ function FeatureTwo() {
       ref={ref}
     >
       {inView && (
-        <motion.div
+        <div
           className={`pb-[10vh] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[100vw]`}
         >
           <div className="w-full flex flex-wrap justify-center gap-6">
@@ -76,7 +76,7 @@ function FeatureTwo() {
               <FeatureCardTwo key={index} index={index} {...feature} />
             ))}
           </div>
-        </motion.div>
+        </div>
       )}
       <div className="w-full flex justify-center">
         <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">

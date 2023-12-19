@@ -507,6 +507,10 @@ label {
   margin-left: 2px; 
 }
 
+.activeBox {
+  transition: all 0.5s ease-in-out;
+}
+
 .activeBox:hover {
   cursor: pointer;
   background-color: #fff;
@@ -518,14 +522,19 @@ label {
   transform: scale(1.05);
 }
 
+.activeBox .inneractiveBox  .featured-image {
+  transition: all 0.5s ease-in-out;
+}
+
 .activeBox:hover > .inneractiveBox > .featured-image {
   background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
 
-.activeBox:hover > .inneractiveBox > .featured-image > .feature-image img {
-  display: none;
+.activeBox .inneractiveBox {
+  transition: all 0.5s ease-in-out;
 }
+
 
 .activeBox:hover > .inneractiveBox {
   background-color: #5379fe;
@@ -533,14 +542,7 @@ label {
   transition: all 0.5s ease-in-out;
 }
 
-.activeBox:hover > svg path {
-  fill: #5379fe;
-  transition: all 0.5s ease-in-out;
-}
 
-.activeBox:hover > .feature-image1 {
-  display: inline-block;
-}
 
 .dropdown-content {
   display: none;
@@ -553,6 +555,10 @@ label {
 .dropdown-content li{
   transition: all 0.5s ease-in-out;
 }
+.dropdown-content:hover>li{
+  transition: all 0.5s ease-in-out;
+}
+
 
 .products-dropdown:hover .dropdown-content {
   display: block;
