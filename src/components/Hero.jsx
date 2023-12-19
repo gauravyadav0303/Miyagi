@@ -91,7 +91,7 @@ function Hero() {
       />
 
       <div className={` mx-auto ${styles.paddingX}`}>
-        <div>
+        
           <h1
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
@@ -100,7 +100,7 @@ function Hero() {
               {">"}
             </span>
           </h1>
-        </div>
+        
       </div>
 
       <div

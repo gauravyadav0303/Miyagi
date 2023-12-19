@@ -4,8 +4,18 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { logo } from "../assets";
 import { Icon } from "@iconify/react";
+import { useInView } from "react-intersection-observer";
 
 const Header = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  const [ref1, inView1] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
   const [scrolled, setScrolled] = useState(false);
 
   const navigate = useNavigate();
@@ -73,17 +83,54 @@ const Header = () => {
               <span className="dot absolute bottom-[-10px]"></span>
             )}
 
-            <ul className="dropdown-content absolute border-2 p-4 rounded-lg top-[4rem] left-0 flex flex-col gap-4">
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Storage</a>
-              </li>
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Verification</a>
-              </li>
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Esign</a>
-              </li>
-            </ul>
+            <div className="dropdown-content absolute " ref={ref}>
+              {inView && (
+                <>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0 }}
+                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Storage</a>
+                  </motion.div>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0.2 }}
+                    className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Verification</a>
+                  </motion.div>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0.4 }}
+                    className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Esign</a>
+                  </motion.div>
+                </>
+              )}
+            </div>
           </li>
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
@@ -113,17 +160,54 @@ const Header = () => {
               <span className="dot absolute bottom-[-10px]"></span>
             )}
 
-            <ul className="dropdown-content absolute border-2 p-4 rounded-lg top-[4rem] left-0 flex flex-col gap-4">
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Storage</a>
-              </li>
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Pricing</a>
-              </li>
-              <li className="border-b-2 p-2 text-black">
-                <a href="#">Esign</a>
-              </li>
-            </ul>
+            <div className="dropdown-content absolute " ref={ref1}>
+              {inView1 && (
+                <>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0 }}
+                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Storage</a>
+                  </motion.div>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0.2 }}
+                    className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Pricing</a>
+                  </motion.div>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      scale: 0,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    transition={{ duration: 0.2, delay: 0.4 }}
+                    className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
+                  >
+                    <a href="#">Esign</a>
+                  </motion.div>
+                </>
+              )}
+            </div>
           </li>
         </ul>
 
