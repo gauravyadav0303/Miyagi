@@ -14,12 +14,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function UploadCard({ subscriptiontype, detail, content, amount, time, index, activeBox, handleBoxClick }) {
   return (
-    <div
+    <motion.div
       key={index}
-      onClick={() => handleBoxClick(index)}
-      className={`${
-        activeBox === index ? "activeBox" : ""
-      }`}
+      className="activeBox"
     >
     <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
           <div className="flex flex-col gap-4 md:gap-6">
@@ -57,7 +54,7 @@ function UploadCard({ subscriptiontype, detail, content, amount, time, index, ac
             </h3>
           </div>
         </div>
-    </div>
+    </motion.div>
   );
 }
 

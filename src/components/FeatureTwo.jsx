@@ -13,19 +13,31 @@ function FeatureCardTwo({
   heading,
   content,
   index,
-  activeBox,
-  handleBoxClick,
+  Image1
+
 }) {
+
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <div
       key={index}
-      onClick={() => handleBoxClick(index)}
-      className={`${activeBox === index ? "activeBox" : ""}`}
+      className="activeBox" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
     >
      
         <div className="inneractiveBox flex flex-col w-[310px] h-[390px] md:h-[455px] rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
           <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
-            <img className="feature-image " src={Image} alt="" />
+          <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
+          <img className={`feature-image1 ${isHovered ? "" : "hidden"}`} src={Image1} alt="" />
           </div>
           <div>
             <h1 className=" text-[20px] md:text-[25px] font-normal uppercase">
@@ -48,15 +60,9 @@ function FeatureTwo() {
     threshold: 0.2,
   });
 
-  const [activeBox, setActiveBox] = useState(0);
-
-  const handleBoxClick = (index) => {
-    setActiveBox(index);
-  };
-
 
   useEffect(() => {
-  }, [activeBox]);
+  }, []);
 
   return (
     <section
@@ -72,8 +78,6 @@ function FeatureTwo() {
               <FeatureCardTwo
                 key={index}
                 index={index}
-                activeBox={activeBox}
-                handleBoxClick={handleBoxClick}
                 {...feature}
               />
             ))}

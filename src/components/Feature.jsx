@@ -4,25 +4,26 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { featurecard } from "..";
 
-function FeatureCard({ Image, heading, content, index, activeBox, handleBoxClick }) {
+function FeatureCard({ Image, Image1, heading, content, index }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div
-      key={index}
-      onClick={() => handleBoxClick(index)}
-      className={`${
-        activeBox === index ? "activeBox" : ""
-      }`}
-    >
-      <div className="inneractiveBox flex flex-col w-[310px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4"
-      >
-        <div
-         
-          className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]"
-        >
-          <img className="feature-image" src={Image} alt="" />
+    <motion.div key={index} className="activeBox" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="inneractiveBox flex flex-col w-[310px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
+        <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
+          <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
+          <img className={`feature-image1 ${isHovered ? "" : "hidden"}`} src={Image1} alt="" />
         </div>
         <div>
-          <h1 className=" text-[20px] md:text-[25px] font-normal uppercase">
+          <h1 className="text-[20px] md:text-[25px] font-normal uppercase">
             {heading}
           </h1>
         </div>
@@ -32,7 +33,7 @@ function FeatureCard({ Image, heading, content, index, activeBox, handleBoxClick
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -42,18 +43,7 @@ function Feature() {
     threshold: 0.2,
   });
 
-  const [activeBox, setActiveBox] = useState(0);
-
-
-  const handleBoxClick = (index) => {
-    setActiveBox(index);
-  };
-
-  
-
-  useEffect(() => {
-  
-  }, [activeBox]);
+  useEffect(() => {}, []);
 
   return (
     <section
@@ -66,13 +56,7 @@ function Feature() {
         >
           <div className="w-full flex flex-wrap justify-center gap-6">
             {featurecard.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                index={index}
-                activeBox={activeBox}
-                handleBoxClick={handleBoxClick}
-                {...feature}
-              />
+              <FeatureCard key={index} index={index} {...feature} />
             ))}
           </div>
         </motion.div>

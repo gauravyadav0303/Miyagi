@@ -555,7 +555,7 @@ label {
   margin-left: 2px; /* adjust the margin based on your design */
 }
 
-.activeBox{
+.activeBox:hover{
   cursor: pointer;
   background-color: #fff;
   padding: 0.1rem;
@@ -564,18 +564,39 @@ label {
   filter: drop-shadow(
       1px 2px 8px var(--shadow-color)
     );
+    transition: all 0.5s ease-out;
+  transform: scale(1.05);
 }
 
 
-.activeBox>.inneractiveBox>.featured-image{
+.activeBox:hover>.inneractiveBox>.featured-image{
   background-color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
-.activeBox>.inneractiveBox{
+.activeBox:hover>.inneractiveBox>.featured-image>.feature-image img{
+display: none;
+}
+
+
+.activeBox:hover>.inneractiveBox{
   background-color: #5379FE;
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
+.activeBox:hover>svg path {
+  fill: #5379FE;
+  transition: fill 0.5s ease-in-out;
+}
+
+/* .featured-image .feature-image1 img{
+  display: none;
+} */
+
+.activeBox:hover>.feature-image1{
+  display: inline-block;
+}
 
 .dropdown-content {
   display: none;
@@ -598,3 +619,6 @@ label {
   display: block;
 }
 
+.feature-image1{
+  transform: translate(25%,20%);
+}
