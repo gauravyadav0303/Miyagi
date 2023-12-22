@@ -98,7 +98,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0 }}
                     className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Storage</a>
+                    <NavLink to="/storage-pricing">Storage</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -175,7 +175,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0 }}
                     className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Storage</a>
+                    <NavLink to="/storage-pricing">Storage</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -235,7 +235,7 @@ const Header = () => {
                     />
                     <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
                       <li className="p-2 text-white">
-                        <a href="#">Storage</a>
+                        <NavLink to="/storage-pricing" href="#">Storage</NavLink>
                       </li>
                       <li className="p-2 text-white">
                         <a href="#">Verification</a>
