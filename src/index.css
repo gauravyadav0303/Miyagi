@@ -44,10 +44,12 @@ body {
 .background {
   background-image: url("./assets/bg.png");
 }
+
 .active {
   color: #5379fe;
 }
 
+ 
 #menuToggle {
   display: block;
   position: absolute;
@@ -574,4 +576,12 @@ label {
 
 .feature-image1 {
   transform: translate(25%, 20%);
+}
+
+.dropdown-content ul>li:active{
+  color: white;
+}
+
+.dropdown-content .active{
+  color: black;
 }

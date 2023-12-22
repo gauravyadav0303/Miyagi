@@ -1,18 +1,18 @@
 import Contact from "../components/Contact";
+import Esign from "../components/Esigns";
 import Header from "../components/Header";
-import StorageSubscription from "../components/StorageSubscription";
 import { NavLink } from "react-router-dom";
 
-function StorageTwo() {
+function Pricing() {
   return (
     <>
       <Header />
       <div className="mt-[10rem] md:mt-[0rem]">
-        <StorageSubscription />
+        <Esign />
         <div className="w-full flex justify-center">
-          <NavLink to="/subscription">
+          <NavLink to="/storage">
             <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
-              pricing of the products
+              why us?
             </button>
           </NavLink>
         </div>
@@ -22,4 +22,4 @@ function StorageTwo() {
   );
 }
 
-export default StorageTwo;
+export default Pricing;

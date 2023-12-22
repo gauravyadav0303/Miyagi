@@ -1,6 +1,6 @@
 import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
@@ -79,9 +79,11 @@ function FeatureTwo() {
         </div>
       )}
       <div className="w-full flex justify-center">
-        <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
-          pricing of the products
-        </button>
+        <NavLink to="/subscription">
+          <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
+            pricing of the products
+          </button>
+        </NavLink>
       </div>
     </section>
   );

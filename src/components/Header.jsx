@@ -57,7 +57,7 @@ const Header = () => {
           />
         </Link>
 
-        <ul className="list-none hidden lg:flex flex-row gap-10">
+        <ul className="navbar list-none hidden lg:flex flex-row gap-10">
           <li
             className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
           >
@@ -98,7 +98,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0 }}
                     className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <NavLink to="/storage-pricing">Storage</NavLink>
+                    <NavLink to="/storage-pricing" >Storage</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -112,7 +112,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.2 }}
                     className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Verification</a>
+                    <NavLink to="/verification" >Verification</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -126,7 +126,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.4 }}
                     className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Esign</a>
+                    <NavLink to="/esign" >Esign</NavLink>
                   </motion.div>
                 </>
               )}
@@ -175,7 +175,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0 }}
                     className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <NavLink to="/storage-pricing">Storage</NavLink>
+                    <NavLink to="/storage-pricing" exact activeClassName="active1">Storage</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -189,7 +189,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.2 }}
                     className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Pricing</a>
+                    <NavLink to="/pricing" exact activeClassName="active1">Pricing</NavLink>
                   </motion.div>
                   <motion.div
                     initial={{
@@ -203,7 +203,7 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.4 }}
                     className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <a href="#">Esign</a>
+                   <NavLink to="/esign" exact activeClassName="active1">Esign</NavLink>
                   </motion.div>
                 </>
               )}
@@ -238,10 +238,10 @@ const Header = () => {
                         <NavLink to="/storage-pricing" href="#">Storage</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                        <a href="#">Verification</a>
+                      <NavLink to="/verification">Verification</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                        <a href="#">Esign</a>
+                      <NavLink to="/esign">Esign</NavLink>
                       </li>
                     </ul>
                   </li>
@@ -261,13 +261,13 @@ const Header = () => {
                     />
                     <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
                       <li className="p-2 text-white">
-                        <a href="#">Storage</a>
+                      <NavLink to="/storage-pricing">Storage</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                        <a href="#">Pricing</a>
+                      <NavLink to="/pricing">Pricing</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                        <a href="#">Esign</a>
+                      <NavLink to="/esign">Esign</NavLink>
                       </li>
                     </ul>
                   </li>
