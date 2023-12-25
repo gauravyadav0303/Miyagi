@@ -189,7 +189,8 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.2 }}
                     className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <NavLink to="/pricing" exact activeClassName="active1">Pricing</NavLink>
+                    <NavLink to="/verification" >Verification</NavLink>
+                   
                   </motion.div>
                   <motion.div
                     initial={{

@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import StorageBanner from "../components/StorageBanner";
 import StorageSubscription from "../components/StorageSubscription";
 import FeatureTwo from "../components/FeatureTwo";
+import AboutThree from "../components/AboutThree";
 
 
 function Storage() {
@@ -15,7 +16,8 @@ function Storage() {
     <Header/>
     <StorageBanner/>
     <FeatureTwo/>
-    <StorageSubscription/>
+    {/* <StorageSubscription/> */}
+    <AboutThree/>
     <Contact/>
     <Footer/>
     </> );

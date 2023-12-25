@@ -15,12 +15,12 @@ function Subscription() {
     },[]);
     return ( <>
     <Header/>
-    <Description/>
+    {/* <Description/> */}
     <SubscriptionBanner/>
     <Feature/>
     <Upload/>
     <Esign/>
-    <AboutThree/>
+    {/* <AboutThree/> */}
     <EsignSubscription/>
     <Footer/>
     </> );

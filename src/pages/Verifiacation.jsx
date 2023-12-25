@@ -1,4 +1,5 @@
 import Contact from "../components/Contact";
+import Description from "../components/Description";
 import Header from "../components/Header";
 import Upload from "../components/Upload";
 import { NavLink} from "react-router-dom";
@@ -6,7 +7,7 @@ import { NavLink} from "react-router-dom";
 function Verfiaction() {
     return ( <>
     <Header/>
-    <div className="mt-[10rem] md:mt-[0rem]">
+    <Description/>
     <Upload/>
     <div className="w-full flex justify-center">
       <NavLink to="/subscription">
@@ -17,7 +18,7 @@ function Verfiaction() {
         
       </div>
     <Contact/>
-    </div>
+    
    
     </> );
 }
