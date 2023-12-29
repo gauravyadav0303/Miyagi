@@ -1,13 +1,19 @@
 import Contact from "../components/Contact";
 import Description from "../components/Description";
 import Header from "../components/Header";
+import SubscriptionBanner from "../components/SubscriptionBanner";
 import Upload from "../components/Upload";
 import { NavLink} from "react-router-dom";
+import { useEffect } from "react";
 
 function Verfiaction() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+},[]);
     return ( <>
     <Header/>
-    <Description/>
+    <div className="mt-[10rem] md:mt-[0rem]">
+      <SubscriptionBanner/>
     <Upload/>
     <div className="w-full flex justify-center">
       <NavLink to="/subscription">
@@ -18,7 +24,7 @@ function Verfiaction() {
         
       </div>
     <Contact/>
-    
+    </div>
    
     </> );
 }

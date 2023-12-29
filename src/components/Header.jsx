@@ -86,48 +86,54 @@ const Header = () => {
             <div className="dropdown-content absolute " ref={ref}>
               {inView && (
                 <>
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0 }}
-                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <NavLink to="/storage-pricing" >Storage</NavLink>
-                  </motion.div>
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0.2 }}
-                    className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <NavLink to="/verification" >Verification</NavLink>
-                  </motion.div>
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0.4 }}
-                    className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <NavLink to="/esign" >Esign</NavLink>
-                  </motion.div>
+                  <NavLink to="/storage-pricing">
+                    <motion.div
+                      initial={{
+                        opacity: 0,
+                        scale: 0,
+                      }}
+                      animate={{
+                        opacity: 1,
+                        scale: 1,
+                      }}
+                      transition={{ duration: 0.2, delay: 0 }}
+                      className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
+                    >
+                      <span>Storage</span>
+                    </motion.div>
+                  </NavLink>
+                  <NavLink to="/verification">
+                    <motion.div
+                      initial={{
+                        opacity: 0,
+                        scale: 0,
+                      }}
+                      animate={{
+                        opacity: 1,
+                        scale: 1,
+                      }}
+                      transition={{ duration: 0.2, delay: 0.2 }}
+                      className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
+                    >
+                      <span>Verification</span>
+                    </motion.div>
+                  </NavLink>
+                  <NavLink to="/esign">
+                    <motion.div
+                      initial={{
+                        opacity: 0,
+                        scale: 0,
+                      }}
+                      animate={{
+                        opacity: 1,
+                        scale: 1,
+                      }}
+                      transition={{ duration: 0.2, delay: 0.4 }}
+                      className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
+                    >
+                      <span>Esign</span>
+                    </motion.div>
+                  </NavLink>
                 </>
               )}
             </div>
@@ -163,6 +169,7 @@ const Header = () => {
             <div className="dropdown-content absolute " ref={ref1}>
               {inView1 && (
                 <>
+                <NavLink to="/storage-pricing">
                   <motion.div
                     initial={{
                       opacity: 0,
@@ -173,10 +180,12 @@ const Header = () => {
                       scale: 1,
                     }}
                     transition={{ duration: 0.2, delay: 0 }}
-                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg  text-black hover:bg-blue-500 hover:text-white"
+                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <NavLink to="/storage-pricing" exact activeClassName="active1">Storage</NavLink>
+                    <span>Storage</span>
                   </motion.div>
+                </NavLink>
+                <NavLink to="/verification">
                   <motion.div
                     initial={{
                       opacity: 0,
@@ -189,9 +198,10 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.2 }}
                     className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
                   >
-                    <NavLink to="/verification" >Verification</NavLink>
-                   
+                    <span>Verification</span>
                   </motion.div>
+                </NavLink>
+                <NavLink to="/esign">
                   <motion.div
                     initial={{
                       opacity: 0,
@@ -204,9 +214,10 @@ const Header = () => {
                     transition={{ duration: 0.2, delay: 0.4 }}
                     className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
                   >
-                   <NavLink to="/esign" exact activeClassName="active1">Esign</NavLink>
+                    <span>Esign</span>
                   </motion.div>
-                </>
+                </NavLink>
+              </>
               )}
             </div>
           </li>
@@ -236,13 +247,15 @@ const Header = () => {
                     />
                     <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
                       <li className="p-2 text-white">
-                        <NavLink to="/storage-pricing" href="#">Storage</NavLink>
+                        <NavLink to="/storage-pricing" href="#">
+                          Storage
+                        </NavLink>
                       </li>
                       <li className="p-2 text-white">
-                      <NavLink to="/verification">Verification</NavLink>
+                        <NavLink to="/verification">Verification</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                      <NavLink to="/esign">Esign</NavLink>
+                        <NavLink to="/esign">Esign</NavLink>
                       </li>
                     </ul>
                   </li>
@@ -262,13 +275,13 @@ const Header = () => {
                     />
                     <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
                       <li className="p-2 text-white">
-                      <NavLink to="/storage-pricing">Storage</NavLink>
+                        <NavLink to="/storage-pricing">Storage</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                      <NavLink to="/pricing">Pricing</NavLink>
+                        <NavLink to="/pricing">Pricing</NavLink>
                       </li>
                       <li className="p-2 text-white">
-                      <NavLink to="/esign">Esign</NavLink>
+                        <NavLink to="/esign">Esign</NavLink>
                       </li>
                     </ul>
                   </li>

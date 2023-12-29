@@ -1,7 +1,7 @@
 import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import { featurecard } from "..";
+import { featurecardthree } from "..";
 
 function FeatureCard({ Image, Image1, heading, content, index }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -38,7 +38,7 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
   );
 }
 
-function Feature() {
+function EsignCard() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -56,7 +56,7 @@ function Feature() {
           className={`pb-[10vh] w-7xl mx-auto ${styles.paddingX} items-start lg:w-[100vw]`}
         >
           <div className="w-full flex flex-wrap justify-center gap-6">
-            {featurecard.map((feature, index) => (
+            {featurecardthree.map((feature, index) => (
               <FeatureCard key={index} index={index} {...feature} />
             ))}
           </div>
@@ -66,4 +66,4 @@ function Feature() {
   );
 }
 
-export default Feature;
+export default EsignCard;

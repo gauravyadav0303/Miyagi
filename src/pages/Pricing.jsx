@@ -2,8 +2,12 @@ import Contact from "../components/Contact";
 import Esign from "../components/Esigns";
 import Header from "../components/Header";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 function Pricing() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+},[]);
   return (
     <>
       <Header />

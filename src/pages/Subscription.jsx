@@ -15,13 +15,15 @@ function Subscription() {
     },[]);
     return ( <>
     <Header/>
+    <div className="mt-[10rem] lg:mt-[15rem]">
     {/* <Description/> */}
-    <SubscriptionBanner/>
+    {/* <SubscriptionBanner/> */}
     <Feature/>
     <Upload/>
-    <Esign/>
+    {/* <Esign/> */}
     {/* <AboutThree/> */}
     <EsignSubscription/>
+    </div>
     <Footer/>
     </> );
 }

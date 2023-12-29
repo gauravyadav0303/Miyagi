@@ -67,6 +67,40 @@ export const featurecardtwo = [
     },
   ];
 
+  export const featurecardthree = [
+    {
+      Image: immutability,
+      Image1: immutability1,
+      heading: "Decentralized verification",
+      content:
+        "Blockchain e-sigs can be independently verified by any party without relying on a central database or service provider, enhancing availability and removing single point of failure risks that exist with traditional e-sigs.",
+    },
+  
+    {
+      Image: impenetrability,
+      Image1:impenetrability1,
+      heading: "Document integrity",
+      content:
+        "Storing a hash fingerprint on an immutable blockchain allows any changes made to the source document stored in IPFS to be immutably detected, providing superior evidence of tampering compared to traditional e-signs. ",
+    },
+  
+    {
+      Image: verifiability,
+      Image1:verifiability1,
+      heading: "Non-repudiable",
+      content:
+        "The cryptographic signing technique and public/private key pair system used for blockchain e-sigs assigns accountability to the signers' identities, preserving this linkage permanently on the decentralized ledger. Traditional e-sigs can have ambiguity around signer identities.",
+    },
+  
+    {
+      Image: timestamping,
+      Image1:timestamping1,
+      heading: "Cost-effective scalability",
+      content:
+        "The decentralized and programmable architecture of blockchain e-signatures means that additional signature volume and users can be added with negligible incremental cost. Compared to traditional centralized e-signature solutions, blockchains offer significantly better economics for scaling up digital signature usage within an organization. ",
+    },
+  ];
+
   export const uploadcard = [
     {
       subscriptiontype:"base",

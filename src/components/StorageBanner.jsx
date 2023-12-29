@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { box1, box2, box3, box4 } from "../assets";
+import { box1, box4 } from "../assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
