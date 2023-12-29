@@ -187,7 +187,7 @@ function Offer() {
                 <motion.div className="desktopContentSection">
                   {activeBox === 1 && (
                     <motion.img
-                      src={Offer4}
+                      src={Offer6}
                       alt=""
                       className="img img1 rounded-[20px]"
                       initial={{
@@ -203,7 +203,7 @@ function Offer() {
                 <motion.div className="desktopContentSection">
                   {activeBox === 2 && (
                     <motion.img
-                      src={Offer5}
+                      src={Offer4}
                       alt=""
                       className="img img2 rounded-[20px]"
                       initial={{
@@ -219,7 +219,7 @@ function Offer() {
                 <motion.div className="desktopContentSection last">
                   {activeBox === 3 && (
                     <motion.img
-                      src={Offer6}
+                      src={Offer5}
                       alt=""
                       className="img img3 last rounded-[20px] "
                       initial={{

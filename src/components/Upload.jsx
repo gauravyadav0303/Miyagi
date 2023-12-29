@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect, useState } from "react";
 import { uploadcard } from "..";
+import Tilt from 'react-parallax-tilt';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,11 +15,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function UploadCard({ subscriptiontype, detail, content, amount, time, index, activeBox, handleBoxClick }) {
   return (
-    <motion.div
+    <Tilt className="parallax-effect" perspective={500} tiltMaxAngleX={8} tiltMaxAngleY={8} glareEnable={true} glareMaxOpacity={0.2} glareColor="lightblue" glarePosition="all" glareBorderRadius="10px">
+    <div
       key={index}
       className="activeBox"
     >
-    <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+    <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between transform translate-z-120">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               {subscriptiontype}
@@ -54,7 +56,8 @@ function UploadCard({ subscriptiontype, detail, content, amount, time, index, ac
             </h3>
           </div>
         </div>
-    </motion.div>
+    </div>
+    </Tilt>
   );
 }
 

@@ -511,6 +511,7 @@ label {
 
 .activeBox {
   transition: all 0.5s ease-in-out;
+ 
 }
 
 .activeBox:hover {
@@ -521,7 +522,7 @@ label {
   --shadow-color: hsl(0deg 0% 0% / 0.25);
   filter: drop-shadow(1px 2px 8px var(--shadow-color));
   transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
+  
 }
 
 .activeBox .inneractiveBox  .featured-image {
@@ -535,6 +536,7 @@ label {
 
 .activeBox .inneractiveBox {
   transition: all 0.5s ease-in-out;
+ 
 }
 
 
@@ -584,4 +586,8 @@ label {
 
 .dropdown-content .active{
   color: black;
+}
+
+.parallax-effect{
+  transform-style: preserve-3d;
 }
