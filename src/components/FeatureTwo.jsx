@@ -27,7 +27,7 @@ function FeatureCardTwo({ Image, heading, content, index, Image1 }) {
       onMouseLeave={handleMouseLeave}
     >
       <div className="inneractiveBox flex flex-col w-[310px] h-[390px] md:h-[455px] rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
-        <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
+        <div className="featured-image w-[100px] h-[100px] bg-[#9F32B2] rounded-[20px]">
           <img
             className={`feature-image ${isHovered ? "hidden" : ""}`}
             src={Image}
@@ -78,13 +78,6 @@ function FeatureTwo() {
           </div>
         </div>
       )}
-      <div className="w-full flex justify-center">
-        <NavLink to="/subscription">
-          <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
-            pricing of the products
-          </button>
-        </NavLink>
-      </div>
     </section>
   );
 }

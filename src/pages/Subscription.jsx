@@ -16,13 +16,8 @@ function Subscription() {
     return ( <>
     <Header/>
     <div className="mt-[10rem] lg:mt-[15rem]">
-    {/* <Description/> */}
-    {/* <SubscriptionBanner/> */}
     <Feature/>
     <Upload/>
-    {/* <Esign/> */}
-    {/* <AboutThree/> */}
-    <EsignSubscription/>
     </div>
     <Footer/>
     </> );

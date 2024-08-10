@@ -40,29 +40,29 @@ function Power() {
 
     loadImages();
 
-    gsap.to(".box6", {
-      scrollTrigger: {
-        trigger: ".trigger1",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 300,
-      y: 200,
-      ease: "power1.inOut",
-      duration: 2,
-    });
+    // gsap.to(".box6", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger1",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 300,
+    //   y: 200,
+    //   ease: "power1.inOut",
+    //   duration: 2,
+    // });
 
-    gsap.to(".box7", {
-      scrollTrigger: {
-        trigger: ".trigger1",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      ease: "power1.inOut",
-      duration: 2,
-    });
+    // gsap.to(".box7", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger1",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   ease: "power1.inOut",
+    //   duration: 2,
+    // });
   }, []);
 
   return (
@@ -70,11 +70,11 @@ function Power() {
       className={`trigger1 power w-full relative min-h-[80vh] md:min-h-[90vh] mx-auto`}
       ref={ref}
     >
-      <motion.img
+      {/* <motion.img
         className="box box7 absolute top-[80vh] right-[10vw] xl:top-[75vh] xl:right-[20vw] rotate-[-40.33] hidden md:inline-block"
         src={box13}
         alt="box"
-      />
+      /> */}
 
       <div className={`w-full flex flex-col md:flex-row justify-between`}>
         <div className="relative w-full flex flex-col items-center md:w-[60%] h-[20rem] md:h-full lg:h-full xl:w-[40%]">
@@ -116,28 +116,28 @@ function Power() {
             <div className="flex flex-col gap-10">
               <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal mt-4 leading-7 tracking-wide">
                 {"<"}Whether it be having an easy-to-use{" "}
-                <span className="text-[#5379FE]">Verification</span> and
-                <span className="text-[#5379FE]">
+                <span className="text-[#9F32B2]">Verification</span> and
+                <span className="text-[#9F32B2]">
                   {" "}
                   Timestamping platform for all your Documents
                 </span>{" "}
                 or the sheer simplicity of{" "}
-                <span className="text-[#5379FE]">Decentralised Data Storage,</span>{" "}
+                <span className="text-[#9F32B2]">Decentralised Data Storage,</span>{" "}
                 we do it all and this is but the{" "}
-                <span className="text-[#5379FE]">tip of ice berg</span> {">"}
+                <span className="text-[#9F32B2]">tip of ice berg</span> {">"}
               </p>
               <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal leading-7 tracking-wide">
-                Just like <span className="text-[#5379FE]">Satoshi</span>{" "}
+                Just like <span className="text-[#9F32B2]">Satoshi</span>{" "}
                 envisioned Bitcoin taking over financial institutions by
                 dreaming of a world which is{" "}
-                <span className="text-[#5379FE]">fair</span> &
-                <span className="text-[#5379FE]">democratised</span>, We at{" "}
-                <span className="text-[#5379FE]">Miyagi</span> envision to
+                <span className="text-[#9F32B2]">fair</span> &
+                <span className="text-[#9F32B2]">democratised</span>, We at{" "}
+                <span className="text-[#9F32B2]">Miyagi</span> envision to
                 create a similar level of disruption in the cloud storage
                 ecosystem by leveraging the fundamentals of BLOCKCHAIN{" "}
-                <span className="text-[#5379FE]">Blockchain Technology</span>{" "}
+                <span className="text-[#9F32B2]">Blockchain Technology</span>{" "}
                 and core principles of{" "}
-                <span className="text-[#5379FE]">Satoshi’s philosophy</span>.
+                <span className="text-[#9F32B2]">Satoshi’s philosophy</span>.
               </p>
             </div>
           </div>

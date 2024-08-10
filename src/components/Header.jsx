@@ -4,18 +4,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { logo } from "../assets";
 import { Icon } from "@iconify/react";
-import { useInView } from "react-intersection-observer";
 
 const Header = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.2,
-  });
-
-  const [ref1, inView1] = useInView({
-    triggerOnce: false,
-    threshold: 0.2,
-  });
+  
   const [scrolled, setScrolled] = useState(false);
 
   const navigate = useNavigate();
@@ -59,7 +50,7 @@ const Header = () => {
 
         <ul className="navbar list-none hidden lg:flex flex-row gap-10">
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
+            className={` hover:text-[#9F32B2] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/" exact activeClassName="active">
               Home
@@ -68,78 +59,17 @@ const Header = () => {
               <span className="dot absolute bottom-[-10px]"></span>
             )}
           </li>
-          <li className="hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative products-dropdown">
+          <li className="hover:text-[#9F32B2] text-[18px] font-medium cursor-pointer relative products-dropdown">
             <NavLink to="/storage" className="flex flex-row justify-between">
-              Products{" "}
-              <span className="mx-auto">
-                <Icon
-                  icon="iconamoon:arrow-down-2-thin"
-                  width="26"
-                  className="flex"
-                />
-              </span>
+              About{" "}
             </NavLink>
             {window.location.pathname === "/storage" && (
               <span className="dot absolute bottom-[-10px]"></span>
             )}
-
-            <div className="dropdown-content absolute " ref={ref}>
-              {inView && (
-                <>
-                  <NavLink to="/storage-pricing">
-                    <motion.div
-                      initial={{
-                        opacity: 0,
-                        scale: 0,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        scale: 1,
-                      }}
-                      transition={{ duration: 0.2, delay: 0 }}
-                      className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
-                    >
-                      <span>Storage</span>
-                    </motion.div>
-                  </NavLink>
-                  <NavLink to="/verification">
-                    <motion.div
-                      initial={{
-                        opacity: 0,
-                        scale: 0,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        scale: 1,
-                      }}
-                      transition={{ duration: 0.2, delay: 0.2 }}
-                      className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
-                    >
-                      <span>Verification</span>
-                    </motion.div>
-                  </NavLink>
-                  <NavLink to="/esign">
-                    <motion.div
-                      initial={{
-                        opacity: 0,
-                        scale: 0,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        scale: 1,
-                      }}
-                      transition={{ duration: 0.2, delay: 0.4 }}
-                      className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
-                    >
-                      <span>Esign</span>
-                    </motion.div>
-                  </NavLink>
-                </>
-              )}
-            </div>
+           
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative`}
+            className={` hover:text-[#9F32B2] text-[18px] font-medium cursor-pointer relative`}
           >
             <NavLink to="/philosophy">Philosophy</NavLink>
             {window.location.pathname === "/philosophy" && (
@@ -147,79 +77,17 @@ const Header = () => {
             )}
           </li>
           <li
-            className={` hover:text-[#5379FE] text-[18px] font-medium cursor-pointer relative products-dropdown`}
+            className={` hover:text-[#9F32B2] text-[18px] font-medium cursor-pointer relative products-dropdown`}
           >
             <NavLink
               to="/subscription"
               className="flex flex-row justify-between"
             >
               Subscription{" "}
-              <span className="mx-auto">
-                <Icon
-                  icon="iconamoon:arrow-down-2-thin"
-                  width="26"
-                  className="flex"
-                />
-              </span>
             </NavLink>
             {window.location.pathname === "/subscription" && (
               <span className="dot absolute bottom-[-10px]"></span>
             )}
-
-            <div className="dropdown-content absolute " ref={ref1}>
-              {inView1 && (
-                <>
-                <NavLink to="/storage-pricing">
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0 }}
-                    className="p-4 bg-[#fff] border-t-2 border-r-2 border-l-2 rounded-tl-lg rounded-tr-lg text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <span>Storage</span>
-                  </motion.div>
-                </NavLink>
-                <NavLink to="/verification">
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0.2 }}
-                    className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <span>Verification</span>
-                  </motion.div>
-                </NavLink>
-                <NavLink to="/esign">
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      scale: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{ duration: 0.2, delay: 0.4 }}
-                    className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white"
-                  >
-                    <span>Esign</span>
-                  </motion.div>
-                </NavLink>
-              </>
-              )}
-            </div>
           </li>
         </ul>
 
@@ -239,25 +107,7 @@ const Header = () => {
 
                 <NavLink to="/storage">
                   <li className="mobile-dropdown">
-                    Storage
-                    <Icon
-                      icon="iconamoon:arrow-down-2-thin"
-                      width="26"
-                      className="inline-block"
-                    />
-                    <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
-                      <li className="p-2 text-white">
-                        <NavLink to="/storage-pricing" href="#">
-                          Storage
-                        </NavLink>
-                      </li>
-                      <li className="p-2 text-white">
-                        <NavLink to="/verification">Verification</NavLink>
-                      </li>
-                      <li className="p-2 text-white">
-                        <NavLink to="/esign">Esign</NavLink>
-                      </li>
-                    </ul>
+                    About
                   </li>
                 </NavLink>
 
@@ -268,22 +118,6 @@ const Header = () => {
                 <NavLink to="/subscription">
                   <li className="mobile-dropdown">
                     Subscription
-                    <Icon
-                      icon="iconamoon:arrow-down-2-thin"
-                      width="26"
-                      className="inline-block"
-                    />
-                    <ul className="mobile-dropdown-content p-4 rounded-lg flex flex-col gap-4">
-                      <li className="p-2 text-white">
-                        <NavLink to="/storage-pricing">Storage</NavLink>
-                      </li>
-                      <li className="p-2 text-white">
-                        <NavLink to="/pricing">Pricing</NavLink>
-                      </li>
-                      <li className="p-2 text-white">
-                        <NavLink to="/esign">Esign</NavLink>
-                      </li>
-                    </ul>
                   </li>
                 </NavLink>
               </ul>
@@ -296,8 +130,8 @@ const Header = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <button className=" min-w-[140px] font-poppins font-medium cursor-pointer text-[16px] rounded-xl border-2 p-2 text-white bg-[#5379FE] hover:w-[120px] hover:scale-95">
-            Login
+          <button className=" min-w-[140px] font-poppins font-medium cursor-pointer text-[16px] rounded-xl border-2 p-2 text-white bg-[#9F32B2] hover:w-[120px] hover:scale-95">
+            Contact Us
           </button>
         </motion.div>
       </div>

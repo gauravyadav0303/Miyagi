@@ -47,39 +47,36 @@ function Offer() {
     const updateActiveBox = () => {
       const scrollPosition = window.scrollY + window.innerHeight*3.4;
       const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
-      // console.log(boxIndex);
-      // console.log(window.scrollY);
-
       setActiveBox(boxIndex);
     };
 
     window.addEventListener("scroll", updateActiveBox);
 
-    gsap.to(".box8", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
+    // gsap.to(".box8", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger2",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box9", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 300,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
+    // gsap.to(".box9", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger2",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 300,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth > 1024);
@@ -99,7 +96,7 @@ function Offer() {
 
   return (
     <section className={`trigger2 w-full relative min-h-[100vh] mx-auto`}>
-      <motion.img
+      {/* <motion.img
         className="box box8 absolute top-[10vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"
         src={box1}
         alt="box"
@@ -108,16 +105,15 @@ function Offer() {
         className="box box9 absolute top-[60vh] right-[0px] rotate-[-40.33]"
         src={box9}
         alt="box"
-      />
+      /> */}
 
       <div className="mt-[50px] md:mt-[100px]">
         <h1
           className={`${styles.heroHeadText}  text-white uppercase text-center`}
         >
           <span className="text-black">
-            What does have to {"<"}
-            <span className="text-[#5379FE]">MIYAGI</span>
-            {">"} offer?
+            What does <span className="text-[#9F32B2]">{"<"} We {">"}</span> have to 
+             offer?
           </span>
         </h1>
       </div>
@@ -134,15 +130,11 @@ function Offer() {
                     activeBox === 1 ? "active-box" : ""
                   } rounded-[20px]`}
                 >
-                  <h1 className="text-[#5379FE] text-[22px] mb-4">
-                    Sign Documents
+                  <h1 className="text-[#9F32B2] text-[22px] mb-4">
+                  Managing Micro-Finances
                   </h1>
                   <p className="text-[#807E87] text-[0.95rem]">
-                    Are you tired of the hassles and uncertainties of
-                    traditional document signing methods? Say goodbye to the
-                    days of printing, scanning, and mailing documents. Welcome
-                    to the future of secure, efficient, and tamper-proof
-                    document signing with Blockchain technology!
+                  We manage all your recurring bills—from utilities to subscriptions—ensuring they're paid on time, every time. No more missed payments or late fees; we handle it all, so you don't have to.
                   </p>
                 </div>
 
@@ -151,14 +143,11 @@ function Offer() {
                     activeBox === 2 ? "active-box" : ""
                   } rounded-[20px]`}
                 >
-                  <h1 className="text-[#5379FE] text-[22px] mb-4">
-                    Store Data
+                  <h1 className="text-[#9F32B2] text-[22px] mb-4">
+                  Personalized Financial Solutions
                   </h1>
                   <p className="text-[#807E87] text-[0.95rem]">
-                    Discover the pinnacle of data security and trust in
-                    decentralized storage, harnessed by Blockchain. Bid adieu to
-                    centralized vulnerabilities and reclaim dominion over your
-                    prized information.
+                  Our services are customized to fit your specific requirements. Whether it's managing multiple accounts or handling complex payment schedules, we provide a solution that's as unique as your financial situation.
                   </p>
                 </div>
 
@@ -167,15 +156,11 @@ function Offer() {
                     activeBox === 3 ? "active-box" : ""
                   } rounded-[20px]`}
                 >
-                  <h1 className="text-[#5379FE] text-[22px] mb-4">
-                    Verify Documents
+                  <h1 className="text-[#9F32B2] text-[22px] mb-4">
+                  Real-Time Tracking
                   </h1>
                   <p className="text-[#807E87] text-[0.95rem]">
-                    Tired of relying on traditional, easily forgeable
-                    verification methods? Enter a new era of unassailable trust
-                    and transparency with Blockchain-powered document
-                    verification ensure authenticity and trust while bidding
-                    farewell to counterfeiting concerns.
+                  We automate your bill payments and provide a centralized hub where all your payment receipts are stored. Review and track every transaction in real-time, ensuring you have full visibility and control over your finances.
                   </p>
                 </div>
               </div>

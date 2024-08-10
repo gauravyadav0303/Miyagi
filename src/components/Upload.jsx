@@ -20,7 +20,7 @@ function UploadCard({ subscriptiontype, detail, content, amount, time, index, ac
       key={index}
       className="activeBox"
     >
-    <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between transform translate-z-120">
+    <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-[#9F32B2] rounded-3xl p-6 flex flex-col justify-between transform translate-z-120">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               {subscriptiontype}
@@ -72,41 +72,41 @@ function Upload() {
   };
 
   useEffect(() => {
-    gsap.to(".box5", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
-      ease: Power1,
-      duration: 2,
-    });
+    // gsap.to(".box5", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger2",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box6", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 300,
-      y: 200,
-      ease: Power1,
-      duration: 2,
-    });
+    // gsap.to(".box6", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger2",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 300,
+    //   y: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box7", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      ease: Power1,
-      duration: 2,
-    });
+    // gsap.to(".box7", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger2",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
   }, [activeBox]);
 
@@ -116,7 +116,7 @@ function Upload() {
     <section
       className={`trigger2 w-full relative md:pt-[100px] pb-[100px] min-h-[80vh]  md:min-h-[100vh] mx-auto bg-[]`}
     >
-      <motion.img
+      {/* <motion.img
         className="box box5 absolute top-[3vh] left-[0px] xl:top-[10vh] xl:left-[0px] rotate-[-40.33]  hidden xl:inline-block"
         src={box1}
         alt="box"
@@ -130,7 +130,7 @@ function Upload() {
         className="box box7 absolute top-[80vh] right-[10vw] xl:top-[80vh] xl:right-[20vw] rotate-[-40.33]  hidden md:inline-block"
         src={box13}
         alt="box"
-      />
+      /> */}
       <div className={` max-w-7xl mx-auto ${styles.paddingX} items-start`}>
         <div>
           <h2

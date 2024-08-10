@@ -10,64 +10,64 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Hero() {
   useEffect(() => {
-    gsap.to(".box1", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
+    // gsap.to(".box1", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box2", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
+    // gsap.to(".box2", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box3", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
+    // gsap.to(".box3", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box4", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 200,
-      y: 200,
+    // gsap.to(".box4", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 200,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
   }, []);
 
   return (
     <section
       className={`trigger background relative w-full min-h-[100vh] pt-[270px] pb-[100px] md:pt-[270px] md:pb-[270px] md:min-h-[100vh] mx-auto `}
     >
-      <motion.img
+      {/* <motion.img
         className="box box1 absolute top-[5vh] left-[0px] xl:top-[10vh] hidden md:inline-block xl:left-[0px] rotate-[-40.33]"
         src={box1}
         alt="box"
@@ -88,7 +88,7 @@ function Hero() {
         className="box box4 absolute top-[3vh] right-[100px] xl:top-[15vh] xl:right-[10.47px] rotate-[-40.33]"
         src={box4}
         alt="box4"
-      />
+      /> */}
 
       <div className={` mx-auto ${styles.paddingX}`}>
         
@@ -96,7 +96,7 @@ function Hero() {
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
             <span className="text-black">
-              {"<"}Our <span className="text-[#5379FE]">PHILOSOPHY</span>
+              {"<"}Our <span className="text-[#9F32B2]">PHILOSOPHY</span>
               {">"}
             </span>
           </h1>
@@ -109,15 +109,14 @@ function Hero() {
         <div className=" mx-auto flex flex-col gap-[2rem]">
           <div className={`text-center ${styles.heroSubText}`}>
             {"<"}If we had to explain to{" "}
-            <span className="text-[#5379FE]">Miyagi</span> in the simplest of
-            terms, We are a <br className="hidden lg:inline-block"/> company which gives right to data ownership to the
-            client{">"}
+            <span className="text-[#9F32B2]">US</span> in the simplest of
+            terms, We are a <br className="hidden lg:inline-block"/> company which gives the access of all your finances and micro-finances at one place.{">"}
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">
-          <span className="text-[#5379FE]">In an era</span> where people’s data is being exploited by big tech giants
+          <span className="text-[#9F32B2]">In an era</span> where people’s data is being exploited by big tech giants
             for their ulterior motives,we want to equip people with a tool which
-          <span className="text-[#5379FE]"> would give them an option to not let their data be exploited</span> by the
-            big tech companies or perhaps how <span className="text-[#5379FE]">John Lennon</span> would’ve said it.
+          <span className="text-[#9F32B2]"> would give them an option to not let their data be exploited</span> by the
+            big tech companies or perhaps how <span className="text-[#9F32B2]">John Lennon</span> would’ve said it.
           </div>
         </div>
       </div>

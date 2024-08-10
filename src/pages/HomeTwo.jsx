@@ -4,7 +4,6 @@ import Goal from "../components/Goal";
 import Header from "../components/Header";
 import HeroTwo from "../components/HeroTwo";
 import Knowledge from "../components/Knowledge";
-import Newsletter from "../components/Newsletter";
 import Offer from "../components/Offer";
 import OfferTwo from "../components/OfferTwo";
 import { useEffect } from "react";
@@ -23,7 +22,6 @@ function HomeTwo() {
         <OfferTwo className="lg:hidden" />
         <Goal />
         <Knowledge />
-        <Newsletter />
         <Footer />
       </div>
     </>

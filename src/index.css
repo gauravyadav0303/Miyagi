@@ -7,7 +7,7 @@
 :root {
   --background: "#F6F4FF";
   --active-box: rgba(83, 121, 254, 0.1);
-  --primary: #5379fe;
+  --primary: #9F32B2;
   --secondary: #fffff;
   --border-color: #d4d7eb;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .active {
-  color: #5379fe;
+  color: #9F32B2;
 }
 
  
@@ -104,7 +104,7 @@ body {
 }
 
 #menuToggle a:hover {
-  color: #5379fe;
+  color: #9F32B2;
 }
 
 #menuToggle input {
@@ -503,7 +503,7 @@ label {
   left: 50%;
   width: 6px;
   height: 6px;
-  background-color: #5379fe; 
+  background-color: #9F32B2; 
   border-radius: 50%;
   margin-top: 3px; 
   margin-left: 2px; 
@@ -541,7 +541,7 @@ label {
 
 
 .activeBox:hover > .inneractiveBox {
-  background-color: #5379fe;
+  background-color: #9F32B2;
   color: #fff;
   transition: all 0.5s ease-in-out;
 }

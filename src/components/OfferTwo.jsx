@@ -12,31 +12,31 @@ gsap.registerPlugin(ScrollTrigger);
 function OfferTwo() {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
   useEffect(() => {
-    gsap.to(".box8", {
-        scrollTrigger: {
-          trigger: ".trigger2",
-          start: "top top",
-          scrub: 1,
-        },
-        x: -500,
-        y: 200,
-        z: 200,
-        ease: Power1,
-        duration: 2,
-      });
+    // gsap.to(".box8", {
+    //     scrollTrigger: {
+    //       trigger: ".trigger2",
+    //       start: "top top",
+    //       scrub: 1,
+    //     },
+    //     x: -500,
+    //     y: 200,
+    //     z: 200,
+    //     ease: Power1,
+    //     duration: 2,
+    //   });
   
-      gsap.to(".box9", {
-        scrollTrigger: {
-          trigger: ".trigger2",
-          start: "top top",
-          scrub: 1,
-        },
-        x: 300,
-        y: 200,
-        z: 200,
-        ease: Power1,
-        duration: 2,
-      });
+    //   gsap.to(".box9", {
+    //     scrollTrigger: {
+    //       trigger: ".trigger2",
+    //       start: "top top",
+    //       scrub: 1,
+    //     },
+    //     x: 300,
+    //     y: 200,
+    //     z: 200,
+    //     ease: Power1,
+    //     duration: 2,
+    //   });
 
     const handleResize = () => {
         setIsSmallScreen(window.innerWidth <= 1024);
@@ -57,7 +57,7 @@ function OfferTwo() {
 
   return (
     <section className={`trigger2 w-full relative min-h-[100vh] pb-[5rem] mx-auto`}>
-      <motion.img
+      {/* <motion.img
         className="box box8 absolute top-[10vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"
         src={box1}
         alt="box"
@@ -66,7 +66,7 @@ function OfferTwo() {
         className="box box9 absolute top-[60vh] right-[0px] rotate-[-40.33]"
         src={box9}
         alt="box"
-      />
+      /> */}
 
       <div className="mt-[50px] md:mt-[100px]">
         <h1

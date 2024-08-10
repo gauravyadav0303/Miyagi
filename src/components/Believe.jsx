@@ -16,59 +16,59 @@ function Believe() {
   });
 
   useEffect(() => {
-    gsap.to(".box10", {
-      scrollTrigger: {
-        trigger: ".trigger3",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 1,
-    });
+    // gsap.to(".box10", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger3",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 1,
+    // });
 
-    gsap.to(".box11", {
-      scrollTrigger: {
-        trigger: ".trigger3",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: -900,
-      z: 200,
-      ease: Power1,
-      duration: 1.5,
-    });
+    // gsap.to(".box11", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger3",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: -900,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 1.5,
+    // });
 
-    gsap.to(".box12", {
-      scrollTrigger: {
-        trigger: ".trigger3",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
-    gsap.to(".box13", {
-      scrollTrigger: {
-        trigger: ".trigger3",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2.5,
-    });
+    // gsap.to(".box12", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger3",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
+    // gsap.to(".box13", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger3",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2.5,
+    // });
   }, []);
 
   return (
@@ -76,7 +76,7 @@ function Believe() {
       className={`pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh] trigger3 w-full max-h-[100vh] relative mx-auto `}
       ref={ref}
     >
-      <motion.img
+      {/* <motion.img
         className="box box10 absolute top-[7vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"
         src={box1}
         alt="box"
@@ -96,7 +96,7 @@ function Believe() {
         className="box box13 absolute bottom-[-25vh] right-[10vw] rotate-[-40.33]  hidden xl:inline-block"
         src={box3}
         alt="box"
-      />
+      /> */}
       {inView && (
         <motion.div
           className={` w-7xl mx-auto ${styles.paddingX} flex flex-col gap-10 lg:w-[80vw]`}
@@ -114,8 +114,8 @@ function Believe() {
             className={`${styles.heroHead1Text}  text-white uppercase text-center`}
           >
             <span className="text-black ">
-              If you believe in <span className="text-[#5379FE]"> Data ownership, Tech craftsmanship</span> and <br className="hidden lg:inline-block"/> <span className="text-[#5379FE">Bringing
-              the power back to the people,</span> we would<br className="hidden lg:inline-block"/> recommend you try out <span className="text-[#5379FE]">Miyagi.</span> 
+              If you believe in <span className="text-[#9F32B2]"> Data ownership, Tech craftsmanship</span> and <br className="hidden lg:inline-block"/> <span className="text-[#5379FE">Bringing
+              the power back to the people,</span> we would<br className="hidden lg:inline-block"/> recommend you try out <span className="text-[#9F32B2]">Miyagi.</span> 
             </span>
           </h2>
 
@@ -123,7 +123,7 @@ function Believe() {
             className={`${styles.heroHead1Text}  text-white uppercase text-center`}
           >
             <span className="text-black ">
-              We hope that with your help, <span className="text-[#5379FE]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
+              We hope that with your help, <span className="text-[#9F32B2]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
               future where the issues relating to<br className="hidden lg:inline-block"/> data ownership are no longer a
               concern.
             </span>
@@ -132,7 +132,7 @@ function Believe() {
             className={`${styles.heroHead1Text}  text-white uppercase text-center`}
           >
             <span className="text-black ">
-             <span className="text-[#5379FE]">Together</span> , we shall make a <span className="text-[#5379FE]">difference</span>. 
+             <span className="text-[#9F32B2]">Together</span> , we shall make a <span className="text-[#9F32B2]">difference</span>. 
             </span>
           </h2>
         </motion.div>

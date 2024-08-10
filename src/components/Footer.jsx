@@ -4,7 +4,7 @@ import { linkedIn, facebook, twitter } from "../assets";
 function Footer() {
   return (
     <section
-      className={` w-full py-5 bg-[#5379FE]`}
+      className={` w-full py-5 bg-[#9F32B2]`}
     >
       <div className="flex flex-col text-center md:flex md:flex-row md:justify-between max-w-[80vw] mx-auto">
         <div className="text-white w-[100%] md:w-[60%] lg:w-[50%]">

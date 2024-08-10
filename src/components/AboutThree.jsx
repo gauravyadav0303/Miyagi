@@ -16,59 +16,59 @@ function AboutThree() {
   });
 
   useEffect(() => {
-    gsap.to(".box10", {
-      scrollTrigger: {
-        trigger: ".trigger4",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 1,
-    });
+    // gsap.to(".box10", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger4",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 1,
+    // });
 
-    gsap.to(".box11", {
-      scrollTrigger: {
-        trigger: ".trigger4",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: -800,
-      z: 200,
-      ease: Power1,
-      duration: 1.5,
-    });
+    // gsap.to(".box11", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger4",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: -800,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 1.5,
+    // });
 
-    gsap.to(".box12", {
-      scrollTrigger: {
-        trigger: ".trigger4",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
-    gsap.to(".box13", {
-      scrollTrigger: {
-        trigger: ".trigger4",
-        start: "top top",
-        endTrigger: "bottom bottom",
-        scrub: 1,
-      },
-      x: 600,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2.5,
-    });
+    // gsap.to(".box12", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger4",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2,
+    // });
+    // gsap.to(".box13", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger4",
+    //     start: "top top",
+    //     endTrigger: "bottom bottom",
+    //     scrub: 1,
+    //   },
+    //   x: 600,
+    //   y: 200,
+    //   z: 200,
+    //   ease: Power1,
+    //   duration: 2.5,
+    // });
   }, []);
 
   return (
@@ -76,7 +76,7 @@ function AboutThree() {
       className={`trigger4 w-full min-h-[70vh] md:pt-[10vh] pb-[10vh] relative mx-auto `}
       ref={ref}
     >
-      <motion.img
+      {/* <motion.img
         className="box box10 absolute top-[7vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"
         src={box1}
         alt="box"
@@ -96,7 +96,7 @@ function AboutThree() {
         className="box box13 absolute bottom-[-25vh] right-[10vw] rotate-[-40.33]  hidden xl:inline-block"
         src={box3}
         alt="box"
-      />
+      /> */}
       <div
         className={`mt-[40px] md:mt-[70px] w-full md:max-w-[44rem]  lg:max-w-5xl mx-auto ${styles.paddingX1} flex flex-row items-start`}
       >

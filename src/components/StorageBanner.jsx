@@ -10,38 +10,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 function StorageBanner() {
   useEffect(() => {
-    gsap.to(".box1", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
+    // gsap.to(".box1", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: -500,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
 
-    gsap.to(".box2", {
-      scrollTrigger: {
-        trigger: ".trigger",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 200,
-      y: 200,
+    // gsap.to(".box2", {
+    //   scrollTrigger: {
+    //     trigger: ".trigger",
+    //     start: "top top",
+    //     scrub: 1,
+    //   },
+    //   x: 200,
+    //   y: 200,
 
-      ease: Power1,
-      duration: 2,
-    });
+    //   ease: Power1,
+    //   duration: 2,
+    // });
   }, []);
 
   return (
     <section
       className={`trigger background relative w-full min-h-[100vh] pt-[270px] pb-[100px] md:pt-[270px] md:pb-[270px] md:min-h-[100vh] mx-auto `}
     >
-      <motion.img
+      {/* <motion.img
         className="box box1 absolute top-[5vh] left-[0px] xl:top-[10vh] hidden md:inline-block xl:left-[0px] rotate-[-40.33]"
         src={box1}
         alt="box"
@@ -50,7 +50,7 @@ function StorageBanner() {
         className="box box2 absolute top-[3vh] right-[100px] xl:top-[15vh] xl:right-[10.47px] rotate-[-40.33]"
         src={box4}
         alt="box4"
-      />
+      /> */}
 
       <div className={` mx-auto ${styles.paddingX}`}>
         <div>
@@ -58,7 +58,7 @@ function StorageBanner() {
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
             <span className="text-black">
-            IPFS-POWERED DECENTRALISED <br/> STORAGE SUBSCRIPTION 
+            WE ARE <span className="text-[#9F32B2]">{"<"}LOGO{">"}</span> <br/> Our strengths
             </span>
           </h1>
         </div>
@@ -68,18 +68,15 @@ function StorageBanner() {
         className={`mt-[40px] w-full md:max-w-[44rem]  lg:max-w-6xl mx-auto ${styles.paddingX} flex flex-row items-start`}
       >
         <div className=" mx-auto flex flex-col gap-6 text-center">
-            <div className="text-[#807E87] text-[0.95rem] md:text-[1.1rem] font-normal leading-6 md:leading-7 ">
-            We at <span className="text-[#5379FE]">Miyagi</span> offer storage powered by IPFS technology which stores your documents in a decentralised fashion. This provides an additional layer of security as compared to centralised data storage solutions thus maintaining the integrity of your assets.
+        <div className="text-[#807E87] text-[0.95rem] md:text-[1.1rem] font-normal leading-6 md:leading-7 ">
+            The functioning of each organization is based on various types of processes. By analyzing them, we select appropriate tools, simplifying their implementation, and thus reducing the costs.
             </div>{" "}
             <div className="text-[#807E87] text-[0.95rem] md:text-[1.1rem] font-normal leading-6 md:leading-7 ">
-            Why should you opt for decentralised storage over centralised storage?
+            Our mission is to offer a full spectrum of business support services. We offer accounting and consulting. For us, work is a passion, only with this sense we can develop and provide services at the highest level.
             </div>{" "}
             <div className="text-[#807E87] text-[0.95rem] md:text-[1.1rem] font-normal leading-6 md:leading-7 ">
-            Centralised storages store all your data in one place. This means that it has a single point of failure meaning an error anywhere in the system would cause the entirety of it to collapse, thus posing a danger to the security of your assets.
+            We put emphasis on understanding the needs and business of customers, thanks to which the scope of our services is as individual as possible. In this way, we maximize the efficiency of our work and ensure a high level of customer satisfaction. We are available and open to questions from customers. We are committed to work, and we implement new projects with enthusiasm. Customer satisfaction is our goal.
             </div>{" "}
-            <div className="text-[#807E87] text-[0.95rem] md:text-[1.1rem] font-normal leading-6 md:leading-7 ">
-            Decentralised storage stores your data using InterPlanetaryFileSystem technology where your data is broken down into 256 bits and scattered all across the world. You may be wondering how is that helpful. In order to access your data a hacker would need to have access to all 256 keys which is impossible. Only you have access to the keys of your data, thus safeguarding you
-            </div>
           </div>
         </div>
     </section>

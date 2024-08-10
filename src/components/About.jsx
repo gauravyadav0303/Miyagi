@@ -51,7 +51,7 @@ function About() {
             <span className="text-black ">
               That is a lot to make work and it does get stressful for the team
               but{" "}
-              <span className="text-[#5379FE]">
+              <span className="text-[#9F32B2]">
                 who doesn’t like a challenge?
               </span>
             </span>
@@ -67,21 +67,21 @@ function About() {
             className={`text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize`}
           >
             {"<"}
-            <span className="text-[#5379FE]">
+            <span className="text-[#9F32B2]">
               Try out Miyagi for free and let us know how you feel about it.
             </span>{" "}
             Your opinion matters to us. A Long time{" "}
             <br className="hidden md:inline-block" /> ago, someone asked one of
             our founders,
-            <span className="text-[#5379FE]">“What does the user want?’.</span>
+            <span className="text-[#9F32B2]">“What does the user want?’.</span>
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize">
             That simple yet
             <br />
             Complex question still resonates with us and remains one of the core
-            philosophies of <span className="text-[#5379FE]"> Miyagi</span>.
+            philosophies of <span className="text-[#9F32B2]"> Miyagi</span>.
             Your feedback adds to the landscape of{" "}
-            <span className="text-[#5379FE]"> Miyagi</span> and with your help,
+            <span className="text-[#9F32B2]"> Miyagi</span> and with your help,
             one day we would find the solution to{" "}
             <br className="hidden md:inline-block" /> That Resonating Question
             {">"}
