@@ -24,14 +24,8 @@ function About() {
     >
       <div className={` mx-auto ${styles.paddingX}`}>
         <h1 className={`${styles.heroHead2Text}  text-white text-center`}>
-          <span className="text-black">why miyagi ?</span>
+          <span className="text-black">why LOGO?</span>
         </h1>
-      </div>
-
-      <div className="bg-[white] p-2 mx-auto rounded-lg flex flex-row justify-evenly w-[300px] text-center">
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
       </div>
 
       {inView && (
@@ -67,23 +61,10 @@ function About() {
             className={`text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize`}
           >
             {"<"}
-            <span className="text-[#9F32B2]">
-              Try out Miyagi for free and let us know how you feel about it.
-            </span>{" "}
-            Your opinion matters to us. A Long time{" "}
-            <br className="hidden md:inline-block" /> ago, someone asked one of
-            our founders,
-            <span className="text-[#9F32B2]">“What does the user want?’.</span>
+            We’ll fine-tune the way you handle your financial life, analyzing how you manage payments and suggesting smarter, more efficient methods to free up your time and resources. Our approach is built on close collaboration, constantly aligning with your needs to ensure that every detail is taken care of with precision.
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize">
-            That simple yet
-            <br />
-            Complex question still resonates with us and remains one of the core
-            philosophies of <span className="text-[#9F32B2]"> Miyagi</span>.
-            Your feedback adds to the landscape of{" "}
-            <span className="text-[#9F32B2]"> Miyagi</span> and with your help,
-            one day we would find the solution to{" "}
-            <br className="hidden md:inline-block" /> That Resonating Question
+          Through a blend of automation and personalized service, we address your financial management challenges holistically, drawing on our deep expertise. With a commitment to going beyond what’s expected, we continually strive to simplify and enhance your experience.
             {">"}
           </div>
         </div>

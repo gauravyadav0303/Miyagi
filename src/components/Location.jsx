@@ -36,8 +36,8 @@ function Location() {
         className={` max-w-3xl xl:max-w-6xl mx-auto ${styles.paddingX} text-center`}
       >
         <h1 className={`${styles.heroHead3Text}`}>
-          {"<"}<span className="text-[#9F32B2] uppercase">Miyagi</span>{">"}<br/>A <span className="text-[#9F32B2]"></span>decentralised application built for the <span className="text-[#9F32B2]">curious, </span><br className="hidden lg:inline-block"/>
-          Formulated by the <span className="text-[#9F32B2]">dreamers</span>  & <span className="text-[#9F32B2]">thinkers</span> of the <span className="text-[#9F32B2]">Indian Subcontinent</span>.
+          {"<"}<span className="text-[#9F32B2] uppercase">LOGO</span>{">"}<br/>A service designed for those who value their time<br className="hidden lg:inline-block"/>
+          Created by the <span className="text-[#9F32B2]">innovators</span>  & <span className="text-[#9F32B2]">visionaries</span> of the <span className="text-[#9F32B2]">Indian Subcontinent</span>.
         </h1>
       </div>
     </section>

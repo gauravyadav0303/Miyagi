@@ -4,35 +4,32 @@ import { accesscontrol, accesscontrol1, blockchain, blockchain1, bond, bond1, fe
 
 export const featurecard = [
   {
-    Image: immutability,
-    Image1: immutability1,
-    heading: "Immutability",
+    Image: key1,
+    Image1: key,
+    heading: "Unified bill payments",
     content:
-      "A document once stored on the chain cannot be removed, displaced or edited. This helps protect the integrity of your data.",
+      "Simplify your life with our Unified Bill Payments service, where we handle all your bills seamlessly, ensuring you never miss a due date or worry about payments again.",
   },
-
   {
-    Image: impenetrability,
-    Image1:impenetrability1,
-    heading: "Impenetrability",
+    Image: accesscontrol,
+    Image1: accesscontrol1,
+    heading: "managing micro-finances",
     content:
-      "On the blockchain, your assets are hack-proof. Its advanced encryption keeps your valuable data safe from unauthorized access.",
+      "Experience personalized financial management with our solution, offering tailored solutions to meet your unique needs, and acting as your dedicated partner for all finance-related tasks.",
   },
-
   {
-    Image: verifiability,
-    Image1:verifiability1,
-    heading: "Verifiability",
+    Image: blockchain,
+    Image1: blockchain1,
+    heading: "Accounting and analysis",
     content:
-      "Chain documents get Miyagi's badge. In 'verify now,' confirm Miyagi's verification. Post-metadata changes prompt Miyagi denial, saving manual check time.",
+      "Gain clarity on your finances with our comprehensive Accounting and Analysis service, providing detailed reports, insights, and actionable advice to help you save more and spend smarter.",
   },
-
   {
-    Image: timestamping,
-    Image1:timestamping1,
-    heading: "Time-stamping",
+    Image: bond,
+    Image1: bond1,
+    heading: "Security",
     content:
-      "Chain documents feature a timestamp for verification time and date, ensuring transparency and data integrity.",
+      "Stay protected with our vigilant security measures, shielding you from spam, phishing calls, and financial scams by standing between you and potential threats.",
   },
 ];
 
@@ -40,30 +37,30 @@ export const featurecardtwo = [
     {
       Image: key1,
       Image1: key,
-      heading: "Unrivaled Data Ownership",
+      heading: "Unified bill payments",
       content:
-        "Your data is unequivocally yours. With decentralization, you maintain complete ownership and control, eliminating the possibility of external entities accessing or manipulating your information without your consent.",
+        "Simplify your life with our Unified Bill Payments service, where we handle all your bills seamlessly, ensuring you never miss a due date or worry about payments again.",
     },
     {
       Image: accesscontrol,
       Image1: accesscontrol1,
-      heading: "Enhanced Privacy Control",
+      heading: "managing micro-finances",
       content:
-        "Your data is shielded from intrusive data mining practices, placing you in control of who accesses your information and how it's utilized.",
+        "Experience personalized financial management with our solution, offering tailored solutions to meet your unique needs, and acting as your dedicated partner for all finance-related tasks.",
     },
     {
       Image: blockchain,
       Image1: blockchain1,
-      heading: "Cryptographic Citadel",
+      heading: "Accounting and analysis",
       content:
-        "Elevate your security with our top-tier cryptographic shielding, ensuring an impregnable fortress around your valuable data.",
+        "Gain clarity on your finances with our comprehensive Accounting and Analysis service, providing detailed reports, insights, and actionable advice to help you save more and spend smarter.",
     },
     {
       Image: bond,
       Image1: bond1,
-      heading: "Decentralized Data Fragmentation",
+      heading: "Security",
       content:
-        "Embracing decentralization, your data is fragmented and stored across diverse nodes. This not only enhances security but also minimizes the risk of a single point of failure.",
+        "Stay protected with our vigilant security measures, shielding you from spam, phishing calls, and financial scams by standing between you and potential threats.",
     },
   ];
 
@@ -102,36 +99,29 @@ export const featurecardtwo = [
   ];
 
   export const uploadcard = [
+   
     {
       subscriptiontype:"base",
-      detail:" Individual Golf professional (<500 Clients)",
-      content:" He Perfect Match For Starting Golf Professionals And Golf Professionals With a Smaller Clientele.",
-      amount:" $7.81",
-      time:"  Additional Agenda <11 Month",
-    },
-
-    {
-      subscriptiontype:"base",
-      detail:" Individual Golf professional (<500 Clients)",
-      content:" He Perfect Match For Starting Golf Professionals And Golf Professionals With a Smaller Clientele.",
-      amount:" $7.81",
-      time:"  Additional Agenda <11 Month",
+      detail:"TIER 1",
+      content:"With our Tier 1 service, we handle all your essential payments, including electricity bills, TV bills, mobile recharges, LPG bill payments, and Fast Tag subscriptions—so you can focus on what matters most.",
+      amount:"399",
+      time:"1 Month",
     },
 
     {
       subscriptiontype:"plus",
-      detail:"Individual Golf Professional (>500 Clients) & Smaller Academies (< Less Than 3 Professionals",
-      content:"For The Golf Professionals Who Already Have Many Teaching Hours and Who Have a Large Customer Database and For The Small Golf Academies.",
-      amount:" $14.71",
-      time:" Additional Agenda <18 Month",
+      detail:"TIER 2",
+      content:"In our Tier 2 service, we handle a wide range of essential payments, including electricity, TV, mobile recharge, LPG, FASTag, subscriptions, insurance, credit card bills, water bills, and house tax—ensuring everything is managed effortlessly for you.",
+      amount:"699",
+      time:"1 Month",
     },
 
     {
       subscriptiontype:"premium",
-      detail:"Larger Academies (More Than 3 Professionals)",
-      content:"The Ultimate Solution For The Bigger Academies With a Larger Clientele.",
-      amount:"$22.52",
-      time:"Additional Agenda < 25 Month",
+      detail:"TIER 3",
+      content:"Our Tier 3 service covers a comprehensive range of essential payments, including electricity, TV, mobile recharge, LPG, insurance, credit cards, and more. From utilities to rent and travel bookings, we offer customizable solutions tailored to meet all your financial management needs.",
+      amount:"999",
+      time:"1 Month",
     },
 
   ]

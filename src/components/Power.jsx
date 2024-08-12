@@ -111,33 +111,14 @@ function Power() {
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
             <h1 className="w-full text-[1.7rem] uppercase font-normal">
-              “POWER TO THE PEOPLE”
+              “Simplify Your Finances, Maximize Your Time.”
             </h1>
             <div className="flex flex-col gap-10">
               <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal mt-4 leading-7 tracking-wide">
-                {"<"}Whether it be having an easy-to-use{" "}
-                <span className="text-[#9F32B2]">Verification</span> and
-                <span className="text-[#9F32B2]">
-                  {" "}
-                  Timestamping platform for all your Documents
-                </span>{" "}
-                or the sheer simplicity of{" "}
-                <span className="text-[#9F32B2]">Decentralised Data Storage,</span>{" "}
-                we do it all and this is but the{" "}
-                <span className="text-[#9F32B2]">tip of ice berg</span> {">"}
+                {"<"}Whether it’s ensuring every transaction is effortlessly managed or giving you a singular view of all your financial commitments, we handle it all—and that’s just the beginning.{">"}
               </p>
               <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal leading-7 tracking-wide">
-                Just like <span className="text-[#9F32B2]">Satoshi</span>{" "}
-                envisioned Bitcoin taking over financial institutions by
-                dreaming of a world which is{" "}
-                <span className="text-[#9F32B2]">fair</span> &
-                <span className="text-[#9F32B2]">democratised</span>, We at{" "}
-                <span className="text-[#9F32B2]">Miyagi</span> envision to
-                create a similar level of disruption in the cloud storage
-                ecosystem by leveraging the fundamentals of BLOCKCHAIN{" "}
-                <span className="text-[#9F32B2]">Blockchain Technology</span>{" "}
-                and core principles of{" "}
-                <span className="text-[#9F32B2]">Satoshi’s philosophy</span>.
+              Just as <span className="text-[#9F32B2]">Satoshi</span> envisioned a decentralized financial revolution with Bitcoin, we at <span className="text-[#9F32B2]">LOGO</span> aim to revolutionize how you navigate your financial life. By embracing automation and transparency, we’re crafting a future where managing your finances is not just easy, but empowering—reshaping the landscape with the same transformative spirit that <span className="text-[#9F32B2]">Satoshi</span> brought to the world.
               </p>
             </div>
           </div>

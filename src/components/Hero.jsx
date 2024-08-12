@@ -113,10 +113,7 @@ function Hero() {
             terms, We are a <br className="hidden lg:inline-block"/> company which gives the access of all your finances and micro-finances at one place.{">"}
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">
-          <span className="text-[#9F32B2]">In an era</span> where people’s data is being exploited by big tech giants
-            for their ulterior motives,we want to equip people with a tool which
-          <span className="text-[#9F32B2]"> would give them an option to not let their data be exploited</span> by the
-            big tech companies or perhaps how <span className="text-[#9F32B2]">John Lennon</span> would’ve said it.
+          In a world where the routine of life can drown out the melody of freedom, we strive to bring harmony to your financial rhythm. We offer a symphony of simplicity, where every transaction—from the mundane to the crucial—flows seamlessly, allowing you to reclaim your time and focus on what truly resonates. Much like a timeless song, our service is designed to lift the burden, so you can dance through life with ease and grace, free from the dissonance of everyday tasks.
           </div>
         </div>
       </div>

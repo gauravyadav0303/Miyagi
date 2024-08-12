@@ -36,7 +36,7 @@ function UploadCard({ subscriptiontype, detail, content, amount, time, index, ac
           </div>
           <div>
             <h1 className="text-white text-[25px] md:text-[40px] lowercase">
-              {amount}
+            &#x20b9; {amount}
               <span className="text-white text-2xl lowercase leading-[25px] md:leading-[30px]">
                 /MO
               </span>
@@ -137,7 +137,7 @@ function Upload() {
             className={`${styles.heroHeadText}  text-white uppercase text-center`}
           >
             <span className="text-black">
-              BLOCKCHAIN-BASED VERIFIABLE <br /> UPLOAD SUBSCRIPTION
+             OUR SUBSCRIPTION
             </span>
           </h2>
         </div>

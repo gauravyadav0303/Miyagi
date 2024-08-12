@@ -111,28 +111,26 @@ function Believe() {
           transition={{ duration: 1, delay:0.5 }}
         >
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+            className={`${styles.heroHead1Text}  text-white uppercase text-center sm:w-1/2 sm:mx-auto`}
           >
             <span className="text-black ">
-              If you believe in <span className="text-[#9F32B2]"> Data ownership, Tech craftsmanship</span> and <br className="hidden lg:inline-block"/> <span className="text-[#5379FE">Bringing
-              the power back to the people,</span> we would<br className="hidden lg:inline-block"/> recommend you try out <span className="text-[#9F32B2]">Miyagi.</span> 
+            If you believe in financial freedom, personalized service, and
+            Empowering individuals to focus on what truly matters, we encourage you to try <span className="text-[#9F32B2]">LOGO</span>.
             </span>
           </h2>
 
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+            className={`${styles.heroHead1Text}  text-white uppercase text-center sm:w-1/2 sm:mx-auto`}
           >
             <span className="text-black ">
-              We hope that with your help, <span className="text-[#9F32B2]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
-              future where the issues relating to<br className="hidden lg:inline-block"/> data ownership are no longer a
-              concern.
+            With your support, we aim to create a future where managing finances is effortless and stress-free.
             </span>
           </h2>
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+            className={`${styles.heroHead1Text}  text-white uppercase text-center sm:w-1/2 sm:mx-auto`}
           >
             <span className="text-black ">
-             <span className="text-[#9F32B2]">Together</span> , we shall make a <span className="text-[#9F32B2]">difference</span>. 
+             <span className="text-[#9F32B2]">Together</span> , we can redefine the way people handle their everyday <span className="text-[#9F32B2]">financial tasks</span>. 
             </span>
           </h2>
         </motion.div>

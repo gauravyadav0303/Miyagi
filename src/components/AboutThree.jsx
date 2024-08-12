@@ -104,25 +104,15 @@ function AboutThree() {
           <div
             className={`text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize`}
           >
-            Miyagi Labs pioneers secure and tamper-proof blockchain-based
-            E-signatures, ensuring authenticity and trust in the digital
-            document signing process.
+          <span className="text-[#9F32B2]">{"<"}LOGO{">"}</span>  pioneers seamless and stress-free bill management, ensuring that every payment—from utility bills to ticket bookings—is handled with precision and reliability.
           </div>
           <div
             className={`text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize`}
           >
-            Miyagi Labs distinguishes itself through a cost-effective and
-            premium blockchain-based E-signature solution, leveraging the
-            inherent advantages over centralized servers. Our platform delivers
-            cutting-edge E-signature capabilities that are both affordable and
-            of the highest quality, disrupting the traditional cost dynamics
-            associated with premium services.
+            We distinguish ourselves by offering a cost-effective and comprehensive solution that not only automates your payments but also centralizes all your financial records in one place. Our platform delivers cutting-edge automation and real-time tracking, providing you with unparalleled convenience and transparency, disrupting the traditional hassle of managing multiple bills and transactions. 
           </div>
           <div className="text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize">
-            Miyagi Labs stands as a beacon of innovation, offering businesses a
-            cost-effective yet premium alternative to traditional E-signature
-            solutions, with the added advantage of decentralization and enhanced
-            security over centralized counterparts.
+          <span className="text-[#9F32B2]">{"<"}LOGO{">"}</span> stands as a beacon of innovation, offering individuals and businesses a streamlined, premium alternative to manual payment processes, with the added advantage of enhanced control and peace of mind.
           </div>
         </div>
       </div>
